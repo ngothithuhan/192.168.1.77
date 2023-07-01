@@ -1,0 +1,65 @@
+.screen-select-type-user {
+    width  : fit-content;
+    margin : 0 auto;
+    padding: 20px;
+
+    .block-radio {
+        padding-bottom: 10px;
+    }
+
+    .custom-radio {
+        display        : flex;
+        justify-content: flex-start;
+        gap            : 20px;
+
+        input {
+            background-color: #FF5C00;
+        }
+    }
+
+    .title-step1 {
+        padding-bottom: 5px;
+        font-size     : 16px !important;
+        font-weight   : 700 !important;
+    }
+
+    .btn-center {
+        display        : flex;
+        justify-content: center;
+
+        .btn-confirm {
+            padding      : 5px 12px;
+            color        : #fff;
+            background   : #FF5C00;
+            border       : 0;
+            border-radius: 4px;
+            outline      : unset;
+        }
+    }
+
+}
+
+.modal-show-account-detail {
+    .modal-dialog {
+        width: 90vw !important;
+    }
+
+    &.modal-size-sm {
+        .modal-dialog {
+            width: 30vw !important;
+        }
+    }
+
+    .modal-show-account-detail-body {
+        .back-to-choose-cus {
+            span {
+                cursor: pointer;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+
+        }
+    }
+}

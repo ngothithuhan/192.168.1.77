@@ -1,0 +1,22 @@
+.custom-modal input[type="checkbox"] {
+    margin: 0px !important;
+    margin-left: 5px;
+}
+.custom-second-modal .checkbox_custom {
+    white-space: nowrap;
+}
+.custom-second-modal input[type="checkbox"] {
+    margin: 0px !important;
+    margin-left: 5px;
+}
+.custom-input-halfstatic {
+    position: relative;
+}
+.custom-input-halfstatic .static-text {
+    position: absolute;
+    top: 7px;
+    left: 31px;
+}
+.custom-input-halfstatic .static-input {
+    padding-left: 50px;
+}

@@ -1,0 +1,59 @@
+.bell-notification-container {
+    padding-top : 15px;
+    padding-left: 5px;
+    float       : right;
+
+    i {
+        font-size: 20px;
+        color    : #2766c5;
+        cursor   : pointer;
+    }
+
+    .badge-notify {
+        border-radius: 50%;
+        font-size    : 10px !important;
+        padding      : 2px 5px;
+        position     : relative;
+        top          : -15px;
+        background   : red;
+
+    }
+}
+
+.modal-popup-notification {
+
+    .modal-header {
+        .close {
+            margin-right: 5px !important;
+            margin-top  : 0 !important;
+        }
+    }
+
+    .modal-footer {
+        button {
+            outline: none !important;
+        }
+    }
+
+    .checkbox-noti {
+        padding-top: 10px;
+
+        input[type="checkbox"] {
+            margin  : 0 !important;
+            position: relative;
+            top     : 2px;
+        }
+
+        label {
+            margin-left: 5px;
+            cursor     : pointer;
+        }
+    }
+
+    .ReactTable {
+        //reset custom css react table
+        margin-left : 0 !important;
+        margin-right: 0 !important;
+
+    }
+}

@@ -1,0 +1,400 @@
+.TestCamFace {
+    height: 100%;
+    width : 100%;
+
+    .upload-image-preview {
+        height         : auto;
+        width          : auto;
+        display        : flex;
+        justify-content: center;
+        position       : relative;
+
+        .border-image {
+            max-width       : 500px;
+            height          : 328px;
+            background-color: #F5F5F5;
+
+            .image-preview {
+                width : 500px;
+                height: 328px;
+            }
+
+            .no-image-div {
+                width     : 500px;
+                height    : 328px;
+                background: url('/images/no-image-capture.png');
+            }
+        }
+    }
+
+    .carousel-root {
+
+        .control-dots,
+        .carousel-status {
+            display: none !important;
+        }
+    }
+
+    .carousel .slide img {
+        width: auto !important;
+    }
+
+    .react-record-webcam__wrapper {
+        position: relative;
+
+        .div-btn-video {
+            position     : absolute;
+            margin-top   : 255px;
+            /* text-align: center; */
+            width        : 100%;
+            z-index      : 10;
+        }
+
+        .react-record-webcam__video {
+            position: absolute;
+            z-index : 1;
+        }
+    }
+
+
+    .fa-camera {
+        font-size: 15px;
+    }
+
+    .title {
+        color      : #FFFFFF !important;
+        font-size  : 16px !important;
+        font-weight: 700 !important;
+    }
+
+    .txt-content {
+        color      : #000000;
+        padding    : 10px 20px;
+        font-size  : 14px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .lable_content {
+        width  : 100%;
+        padding: 5px;
+
+        .lable_left {
+            width     : 50%;
+            height    : 25px;
+            float     : left;
+            padding   : 5px;
+            text-align: center;
+        }
+
+        .lable_right {
+            width     : 50%;
+            height    : 25px;
+            float     : left;
+            padding   : 5px;
+            text-align: center;
+        }
+    }
+
+    .lbl_error {
+        width     : 100%;
+        color     : red;
+        padding   : 5px;
+        text-align: center;
+    }
+
+    .img_content {
+        width : auto;
+        height: auto;
+
+        .img_left {
+            width        : 50%;
+            // max-width : 300px;
+            max-height   : 300px;
+            float        : left;
+            padding      : 5px;
+            position     : relative;
+        }
+
+        .img_right {
+            width        : 50%;
+            // max-width : 300px;
+            max-height   : 300px;
+            float        : left;
+            padding      : 5px;
+            position     : relative;
+        }
+
+        .img-div {
+            background-color: #515151;
+        }
+
+        // .img {
+        //     // background-color   : #515151;
+        //     // border          : 1px solid rgba(255, 255, 255, 0.7);
+        //     // height          : 300px;
+        //     // margin          : 5px;
+        //     position: absolute;
+        //     width   : 100%;
+        //     top     : 0;
+        //     left    : 0;
+        // }
+
+        .img-border {
+            background-color   : #515151;
+            margin             : 0px 5px 0px 0px;
+            border             : 1px solid rgba(255, 255, 255, 0.7);
+            // height          : 300px;
+
+            span {
+                width: 100% !important;
+            }
+
+            // background-image   : url("../../../assets/images/bg-camera.svg");
+            // background-position: center;
+            // background-size    : 230px 230px;
+            // background-repeat  : no-repeat;
+        }
+
+        .img-btn {
+            text-align: center;
+            position  : absolute;
+            bottom    : 20px;
+            left      : 25%;
+            right     : 25%;
+        }
+
+        .img-btn-clear {
+            position: absolute;
+            right   : 90px;
+        }
+
+        video {
+            width : 100% !important;
+            height: auto;
+        }
+
+        .floatR {
+            float: right;
+        }
+    }
+
+
+    .label-btn-upload {
+        background-color: #313131;
+        color           : #FFFFFF 50%;
+        height          : 30px;
+        line-height     : 30px;
+        cursor          : pointer;
+        padding         : 0px 20px 5px 20px;
+        margin-right    : 10px;
+
+        &:hover {
+            background-color: #404040;
+            color           : #FFFFFF 50%;
+        }
+    }
+
+    .label-btn-take-photo {
+        color      : #F5F5F5;
+        height     : 30px;
+        line-height: 30px;
+        cursor     : pointer;
+        padding    : 0px 20px 5px 20px;
+
+
+        &:hover {}
+    }
+
+    .label-btn-clear-photo {
+        color : #d25a5a;
+        height: 30px;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    .btn-take-photo {
+        color      : #F5F5F5;
+        height     : 30px;
+        line-height: 30px;
+        cursor     : pointer;
+        padding    : 0px 20px 5px 20px;
+
+
+        &:hover {}
+    }
+
+    .intro-content {
+        // display          : flex;
+        display          : inherit !important;
+        flex-direction   : row;
+        // width         : 90%;
+        height           : 80%;
+        border-radius    : 5px;
+
+        .img-intro {
+            width            : 40%;
+            height           : auto;
+            background-repeat: no-repeat;
+            background-size  : cover;
+            border-radius    : 5px 0 0 5px;
+        }
+
+        .content-intro {
+            display: grid !important;
+
+            .title-test-cam-face {
+                color      : #000000 !important;
+                font-size  : 16px !important;
+                font-weight: 700 !important;
+                padding    : 10px 20px;
+            }
+
+            .check {
+
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(150%);
+                }
+            }
+
+            border-radius : 0 5px 5px 0;
+
+            .control-button {
+                button {
+
+                    box-shadow: none;
+                }
+
+                .letStart {
+                    margin-right               : 10px;
+                    outline                    : none;
+                    text-align                 : center;
+                    transition                 : all 0.5s;
+                    position                   : relative;
+                    -webkit-transition-duration: 0.4s;
+                    /* Safari */
+                    transition-duration        : 0.4s;
+                    text-decoration            : none;
+                    overflow                   : hidden;
+                    cursor                     : pointer;
+                }
+
+                .letStart:after {
+                    content     : "";
+                    display     : block;
+                    position    : absolute;
+                    padding-top : 200%;
+                    padding-left: 350%;
+                    margin-left : -200px !important;
+                    margin-top  : -100%;
+                    opacity     : 0;
+                    transition  : all 0.8s
+                }
+
+                .letStart:active:after {
+                    padding   : 0;
+                    margin    : 0;
+                    opacity   : 1;
+                    transition: 0s
+                }
+
+                .letStart span {
+                    margin-bottom: 0;
+                    cursor       : pointer;
+                    display      : inline-block;
+                    position     : relative;
+                    transition   : 0.5s;
+                }
+
+                .letStart span:after {
+                    content   : '\00bb';
+                    position  : absolute;
+                    opacity   : 0;
+                    top       : 0;
+                    right     : -20px;
+                    transition: 0.5s;
+                }
+
+                .letStart:hover span {
+                    padding-right: 15px;
+                }
+
+                .letStart:hover span:after {
+                    opacity: 1;
+                    right  : 0;
+                }
+
+                .letBack {
+                    // background-color: themed('AccountRegister-sectionBody-btnBack-bg');
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .TestCamFace {
+        .content-intro {
+            display    : grid !important;
+            padding-top: 20px;
+        }
+
+        .upload-image-preview {
+            height: auto;
+            width : auto;
+
+            .img_content {
+                video {
+                    width : 100% !important;
+                    height: 100% !important;
+                }
+            }
+
+            .border-image {
+                width           : 320px;
+                height          : 210px;
+                background-color: #F5F5F5;
+
+                .image-preview {
+                    width : 320px;
+                    height: 210px;
+                }
+
+                .no-image-div {
+                    height    : 210px;
+                    width     : 320px;
+                    background: url('/images/no-image-capture.png');
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .TestCamFace {
+
+        .upload-image-preview {
+            height: auto;
+            width : auto;
+
+            .img_content {
+                video {
+                    width : 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+
+        .content-intro {
+
+            .title-test-cam-face,
+            .txt-content {
+                padding: 10px 20px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,190 @@
+.danh-muc-dau-tu-customize-body {
+    margin          : 0 !important;
+    padding         : 48px 0px 0px 0px !important;
+    background-color: #E5E5E5;
+}
+
+.danh-muc-dau-tu-container {
+    background-color: #FFFFFF;
+    height          : calc(100vh - 185px);
+
+    .danh-muc-dau-tu-body {
+        margin          : 10px;
+        background-color: white;
+        overflow        : hidden;
+        height: calc(100% + 60px);
+
+        .wordwrap {
+            text-align: center;
+        }
+
+        .danh-muc-dau-tu-search {
+            display        : flex;
+            justify-content: space-between;
+            padding-left: 5px;
+
+            .danh-muc-dau-tu-title {
+                font-size: 23px;
+                font-weight: 700;
+                text-align: left;
+                padding-bottom: 10px;
+            }
+        }
+
+        .danh-muc-dau-tu-content {
+            height: calc(100% - 40px);
+
+            .ReactTable {
+                //reset custom css react table
+                margin-left : 0 !important;
+                margin-right: 0 !important;
+
+            }
+
+            .dmdt-table-mix,
+            .dmdt-table-sold,
+            .dmdt-table-have-symbol,
+            .dmdt-table-exps {
+                height: 100%;
+            }
+
+            .sub-nav-dmdt {
+                border-bottom: 1px solid #ddd !important;
+
+                li {
+                    margin-bottom: -4px !important;
+
+                    a {
+                        color      : #00000080;
+                        font-size  : 14px !important;
+                        font-weight: 700 !important;
+                        font-family: Arial, Helvetica, sans-serif !important;
+                    }
+
+                    &.active {
+                        a {
+                            color        : #DF7A00;
+                            font-size    : 14px !important;
+                            font-weight  : 700 !important;
+                            font-family  : Arial, Helvetica, sans-serif !important;
+                            border-top   : none !important;
+                            border-right : none !important;
+                            border-left  : none !important;
+                            border-bottom: 2px solid #DF7A00 !important;
+                        }
+                    }
+                }
+            }
+
+            .tab-content {
+                padding: 10px !important;
+                height : calc(100% - 46px);
+
+                .tab-pane.fade.active.in {
+                    height: 100%;
+                }
+
+                .customize-react-table {
+                    height: 100% !important;
+                }
+
+                #tab4 {
+                    .customize-react-table {
+                        height: calc(100% - 50px) !important;
+                    }
+                }
+            }
+
+
+
+            .dmdt-table-exps-header {
+                display        : flex;
+                width          : 100%;
+                align-items    : center;
+                justify-content: flex-end;
+                height         : 50px;
+                padding        : 0 20px;
+
+                .Select-menu-outer {
+                    z-index: 20;
+                }
+
+                .input-container {
+                    width       : 140px;
+                    margin-right: 20px;
+                }
+
+                .input-container-number-sell {
+                    // position: relative;
+                    width           : 140px;
+                    margin-right    : 20px;
+                    background-color: #fff;
+                    border-color    : #d9d9d9 #ccc #b3b3b3;
+                    border-radius   : 4px;
+                    border          : 1px solid #ccc;
+                    color           : #333;
+                    border-spacing  : 0;
+                    border-collapse : separate;
+                    height          : 32px;
+                    outline         : none;
+
+                    .number-sell {
+                        font-weight  : 500;
+                        height       : 30px;
+                        color        : #333;
+                        border-radius: unset;
+                        padding      : 0 8px;
+                        width        : 100%;
+
+                        &::placeholder {
+                            color  : #aaa;
+                            opacity: 1;
+                        }
+                    }
+
+                    // .number-sell-label {
+                    //     position: absolute;
+                    //     top: 7px;
+                    //     left: 9px;
+                    //     color: #aaaaaa;
+                    // }
+                }
+
+                .btn-du-kien-ban {
+                    height          : 32px;
+                    padding         : 5px 10px;
+                    width           : auto;
+                    border          : none;
+                    outline         : none;
+                    color           : white;
+                    background-color: #DF7A00;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+                .form-control {
+                    font-size: 12px;
+                    height: 32px;
+                }
+
+                .Select-placeholder,
+                .Select--single > .Select-control .Select-value {
+                    line-height: 30px;
+                }
+                
+                .Select-input, .Select-control {
+                    height: 30px;
+                }
+
+                .Select-input > input {
+                    padding: 6px 0 12px;
+                }
+
+            }
+
+        }
+
+    }
+}

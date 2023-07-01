@@ -1,0 +1,48 @@
+.modal-confirm-change-pass {
+    .modal-header {
+        .close {
+            position: relative;
+            top     : 10px;
+            right   : 10px;
+            opacity : 1 !important;
+            color   : white;
+        }
+    }
+
+    .modal-cf-change-pass-title {
+        color           : white;
+        background-color: #DF7A00;
+        padding         : 10px;
+    }
+
+    .modal-cf-change-pass-body {
+        text-align: center;
+        font-size : 14px;
+
+        .line-1 {
+            font-weight: 600;
+        }
+
+        .line-2 {
+            padding: 20px 8px;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        .line-4 {
+            margin-top: 15px;
+
+            button {
+                border          : none;
+                outline         : none;
+                height          : 40px;
+                width           : 95px;
+                color           : white;
+                background-color: #DF7A00;
+            }
+        }
+
+    }
+}

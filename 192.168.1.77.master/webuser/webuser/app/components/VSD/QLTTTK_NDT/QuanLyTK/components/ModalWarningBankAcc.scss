@@ -1,0 +1,88 @@
+.modal-warning-bank-acc-container {
+
+    //reset modal
+    @media (min-width: 768px) {
+        .modal-dialog {
+            width : 400px;
+            margin: 100px auto;
+
+            .modal-content {
+                border-radius: unset;
+            }
+        }
+    }
+
+    .modal-warning-bank-acc-tittle {
+        height          : 48px;
+        background-color: #F20000;
+        color           : white;
+        display         : flex;
+        width           : 100%;
+        align-items     : center;
+        padding         : 0 15px;
+
+        i {
+            font-size: 15px;
+        }
+
+        span {
+            padding-left: 15px;
+            font-size   : 20px;
+        }
+
+        .mwba-title {
+            width: calc(100% - 20px);
+        }
+
+        .mwba-close {
+            width     : 20px;
+            text-align: right;
+
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .modal-warning-bank-acc-body {
+        text-align: center;
+        margin    : 10px 20px;
+
+        p {
+            height    : 40px;
+            margin-top: 25px;
+            font-size : 14px;
+        }
+
+
+        .all-buttons {
+            margin-top: 30px;
+            height    : 65px;
+
+            button {
+                height   : 40px;
+                width    : 128px;
+                border   : none;
+                outline  : none;
+                font-size: 14px;
+                cursor   : pointer;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .mwba-btn-disagree {
+                border          : 1px solid #F20000;
+                color           : #F20000;
+                margin-right    : 10px;
+                background-color: transparent;
+            }
+
+            .mwba-btn-agree {
+                background-color: #F20000;
+                color           : white;
+            }
+        }
+    }
+}

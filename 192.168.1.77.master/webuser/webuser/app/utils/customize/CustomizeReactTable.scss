@@ -1,0 +1,262 @@
+@mixin body-customize-sticky {
+    .rt-table {
+        .rt-thead.-headerGroups {
+            background   : white !important;
+            border-bottom: unset !important;
+
+            .rt-tr.head {
+                .rt-th:nth-child(1) {
+                    position        : sticky !important;
+                    left            : 0;
+                    z-index         : 100 !important;
+                    background-color: white !important;
+                }
+
+                .add-border-bottom {
+                    height         : 100%;
+                    width          : 90%;
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    border-bottom  : 1px solid rgba(0, 0, 0, 1);
+                    padding-bottom : 4px;
+                    margin-bottom  : -4px;
+                }
+            }
+
+            .rt-tr.head:not(:first-child) {
+                border-bottom: 1px solid red !important;
+            }
+
+            .rt-tr {
+                div {
+                    &.sticky {
+                        position        : sticky !important;
+                        left            : 0;
+                        z-index         : 1 !important;
+                        background-color: white !important;
+                    }
+                }
+            }
+        }
+
+        .rt-thead.-header {
+            top: 0px !important;
+        }
+
+        .rt-thead.-filters {
+            top: 48px !important; // = height của -header
+        }
+
+        .rt-thead.-header,
+        .rt-thead.-filters {
+            z-index         : 10 !important;
+            position        : sticky !important;
+            background-color: white !important;
+
+            .rt-tr {
+                .rt-th {
+                    border-right: 1px solid transparent !important;
+                }
+
+                .rt-resizable-header-content {
+                    text-align : right;
+                    font-size  : 14px !important;
+                    font-weight: 700;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+
+            .sticky:nth-child(1) {
+                position        : sticky !important;
+                left            : 0;
+                z-index         : 1 !important;
+                background-color: white !important;
+            }
+
+            .sticky:nth-child(2) {
+                position        : sticky !important;
+                left            : 150px !important;
+                z-index         : 1 !important;
+                background-color: white !important;
+            }
+        }
+
+        .rt-tbody {
+            z-index : 9 !important;
+            overflow: unset !important;
+
+            .rt-td {
+                text-align  : right !important;
+                padding-left: 2px;
+                border-right: 1px solid transparent !important;
+            }
+
+            .rt-tr-group {
+
+                .rt-tr.-odd,
+                .rt-tr.-even {
+                    div:nth-child(1) {
+                        position        : sticky !important;
+                        left            : 0;
+                        z-index         : 1 !important;
+                        background-color: white !important;
+                        font-weight     : 700 !important;
+                        text-align      : left !important;
+                    }
+
+                    div:nth-child(2) {
+                        position        : sticky !important;
+                        left            : 150px;
+                        z-index         : 1 !important;
+                        background-color: white !important;
+                        font-weight     : 700 !important;
+                        text-align      : left !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.customize-react-table {
+
+    &.customize-sticky-table {
+        @include body-customize-sticky;
+    }
+
+    &.without-margin {
+        margin: 0 !important;
+    }
+
+    .without-margin {
+        margin: 0 !important;
+    }
+
+
+    .ReactTable {
+        border: unset !important;
+    }
+
+    .head {
+        background-color: unset !important;
+    }
+
+    .ReactTable .rt-thead.-header {
+        box-shadow: unset !important;
+    }
+
+    .ReactTable .rt-tbody .rt-td {
+        border-right: unset !important;
+    }
+
+    .ReactTable .rt-thead {
+        .rt-th {
+            border-right   : unset !important;
+            border-bottom  : 1px solid #F3F3F3 !important;
+            display        : flex !important;
+            justify-content: center !important;
+            align-items    : center !important;
+
+            &.text-custom-right {
+                justify-content: flex-end !important;
+            }
+
+            &.text-custom-left {
+                justify-content: flex-start !important;
+            }
+
+            &.text-custom-center {
+                justify-content: center;
+            }
+        }
+
+        &.-headerGroups {
+            .rt-th {
+                border-bottom: unset !important;
+
+            }
+        }
+    }
+
+
+
+    .ReactTable .rt-thead.-filters .rt-th {
+        border-right : unset !important;
+        border-bottom: unset !important;
+    }
+
+    .rt-tr {
+        height: 4em;
+    }
+
+
+    .ReactTable .rt-tbody .rt-td {
+        display        : flex !important;
+        justify-content: center !important;
+        align-items    : center !important;
+        padding        : 2px 6px !important;
+
+        // bị lệch do scroll
+        &.text-custom-right {
+            justify-content: flex-end !important;
+            padding-right  : 10px !important;
+        }
+
+        &.text-custom-left {
+            justify-content: flex-start !important;
+            padding-left   : 10px !important;
+        }
+
+    }
+
+    .ReactTable.-striped .rt-tr.-odd,
+    .ReactTable.-striped .rt-tr.-even {
+        background-color: white !important;
+
+        // .rt-td {
+        //    
+        // }
+
+
+        &:hover {
+            background-color: #0000000d !important;
+        }
+    }
+
+
+
+    .ReactTable .rt-tr-group {
+        background-color: white !important;
+
+        &:hover {
+            background-color: #0000000d !important;
+        }
+    }
+
+
+
+    .ReactTable .rt-tbody .rt-tr-group {
+        border-bottom: unset !important;
+    }
+
+    .ReactTable .rt-tbody .rt-tr-group .rt-tr {
+        border-bottom: 1px solid #F3F3F3 !important;
+    }
+
+    .ReactTable .pagination-bottom .-pagination .-center {
+        -webkit-order  : -1;
+        order          : -1;
+        justify-content: unset !important;
+    }
+
+    .ReactTable .-pagination .-previous,
+    .ReactTable .-pagination .-next {
+        flex            : unset !important;
+        -webkit-box-flex: unset !important;
+    }
+
+    .ReactTable .-header .rt-resizable-header:nth-child(1) {
+        background-color: unset !important;
+    }
+}

@@ -1,0 +1,387 @@
+/*css login hinh 1 */
+.login_test {
+  float          : left;
+  margin-left    : -100px;
+  height         : 100%;
+  position       : absolute;
+  background     : url('../images/login_bg1.jpg');
+  background-size: cover;
+  font-family    : 'Montserrat', sans-serif;
+  height         : 100%;
+  margin-top     : -90px;
+}
+
+.login_test .login-form {
+  margin-top    : 20px;
+  background    : rgba(255, 255, 255, .3);
+  padding-bottom: 20px;
+  box-shadow    : 0 1px 3px rgba(0, 0, 0, .2);
+  border-radius : 4px;
+  width         : 26.3%;
+  left          : 30px;
+  top           : 120px;
+}
+
+.login_test .input-group-addon {
+  border-radius: 3px 0 0 3px;
+  border       : none;
+}
+
+.login_test .form-control {
+  border-radius: 0 3px 3px 0;
+  border       : none;
+  color        : #fff;
+  outline      : none !important;
+  box-shadow   : none !important;
+  background   : #ffffff;
+  color        : #414141 !important;
+}
+
+.login_test .input-group {
+  margin-bottom: 10px
+}
+
+.login_test .btn {
+  border-radius: 3px;
+  border       : none;
+  padding      : 8px;
+  outline      : none !important;
+  box-shadow   : 0 1px 3px rgba(0, 0, 0, .2);
+  background   : -webkit-linear-gradient(left, #Ed1c24, #Ed1c24);
+  margin-bottom: 10px;
+  color        : #ffffff !important;
+}
+
+.login_test .logo-g {
+  height: 30px
+}
+
+.login_test .col-md-12 {
+  text-align: left;
+  color     : #ffffff;
+  right     : 14px;
+}
+
+.loginCheckbox {
+  float      : left;
+  margin-left: -15px;
+  margin     : 0px !important;
+}
+
+.g-recaptcha {
+  transform-origin        : left top;
+  -webkit-transform-origin: left top;
+  transform               : scale(1.08);
+  height                  : 100px;
+}
+
+.login_test input.form-control:focus {
+  border-color: #Ed1c24 !important;
+  box-shadow  : 0 0 5px rgba(204, 0, 0, 0.7) !important;
+  outline     : none !important;
+}
+
+/*css login hinh 2 */
+.login_test1 {
+  float          : left;
+  margin-left    : -100px;
+  height         : 100%;
+  position       : absolute;
+  background     : url('../images/login_bg2.jpg');
+  background-size: cover;
+  font-family    : 'Montserrat', sans-serif;
+  height         : 100%;
+  margin-top     : -89px;
+}
+
+.login_test1 .login-form {
+  margin-top    : 20px;
+  background    : rgba(255, 255, 255, .3);
+  padding-bottom: 20px;
+  box-shadow    : 0 1px 3px rgba(0, 0, 0, .2);
+  border-radius : 4px;
+  width         : 26.3%;
+  left          : 30px;
+  top           : 120px;
+}
+
+.login_test1 .input-group-addon {
+  border-radius: 3px 0 0 3px;
+  border       : none;
+}
+
+.login_test1 .form-control {
+  border-radius: 0 3px 3px 0;
+  border       : none;
+  color        : #fff;
+  outline      : none !important;
+  box-shadow   : none !important;
+  background   : #ffffff;
+  color        : #414141 !important;
+}
+
+.login_test1 .input-group {
+  margin-bottom: 10px
+}
+
+.login_test1 .btn {
+  border-radius: 3px;
+  border       : none;
+  padding      : 8px;
+  outline      : none !important;
+  box-shadow   : 0 1px 3px rgba(0, 0, 0, .2);
+  background   : -webkit-linear-gradient(left, #Ed1c24, #Ed1c24);
+  margin-bottom: 10px;
+  color        : #ffffff !important;
+}
+
+.login_test1 .logo-g {
+  height: 30px
+}
+
+.login_test1 .col-md-12 {
+  text-align: left;
+  color     : #ffffff;
+  right     : 14px;
+}
+
+.loginCheckbox {
+  float      : left;
+  margin-left: -15px;
+  margin     : 0px !important;
+}
+
+.g-recaptcha {
+  transform-origin        : left top;
+  -webkit-transform-origin: left top;
+  transform               : scale(1.08);
+  height                  : 100px;
+}
+
+.login_test1 input.form-control:focus {
+  border-color: #Ed1c24 !important;
+  box-shadow  : 0 0 5px rgba(204, 0, 0, 0.7) !important;
+  outline     : none !important;
+}
+
+/*customize lai fatca*/
+.add-info-account .modal-fatca .react-datepicker-wrapper {
+  display: inline-block;
+}
+
+.add-info-account .modal-fatca h5 {
+  float: none;
+}
+
+.modal-chitiet1 td,
+th {
+  text-align    : left;
+  padding       : 8px;
+  padding-bottom: 1px;
+}
+
+.modal-chitiet1 table {
+  width: 100%;
+}
+
+.modal-chitiet1 .form-control {
+  width       : 100%;
+  padding     : 2px 6px;
+  height      : 25px;
+  margin-right: 150px;
+}
+
+.modal-chitiet1 {
+  padding   : 10px;
+  overflow-y: scroll;
+
+}
+
+.popover>.arrow {
+  border-width: 1px !important;
+}
+
+.react-datepicker {
+  font-size: 1em !important;
+}
+
+.react-datepicker__header {
+  padding-top: 0.8em !important;
+}
+
+.react-datepicker__month {
+  margin: 0.4em 1em !important;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width      : 1.9em !important;
+  line-height: 1.9em !important;
+  margin     : 0.166em !important;
+}
+
+.react-datepicker__current-month {
+  font-size: 1em !important;
+}
+
+.react-datepicker__navigation {
+  top        : 1em !important;
+  line-height: 1.7em !important;
+  border     : 0.45em solid transparent !important;
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: #ccc !important;
+  left              : 1em !important;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: #ccc !important;
+  right            : 1em !important;
+}
+
+.react-datepicker__navigation--years-upcoming {
+  top                : -4px !important;
+  border-bottom-color: #ccc !important;
+}
+
+.react-datepicker__navigation--years-previous {
+  top             : 4px !important;
+  border-top-color: #ccc !important;
+}
+
+.react-datepicker__time-list {
+  padding-left: 0px !important;
+}
+
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+  background-color: #ff6fbf !important;
+}
+
+#loadingscreen {
+  position        : fixed;
+  /* Sit on top of the page content */
+  display         : none;
+  width           : 100%;
+  /* Full width (cover the whole page) */
+  height          : 100%;
+  /* Full height (cover the whole page) */
+  top             : 0;
+  left            : 0;
+  right           : 0;
+  bottom          : 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index         : 999999;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor          : pointer;
+  /* Add a pointer on hover */
+}
+
+#loader {
+  position         : absolute;
+  left             : 50%;
+  top              : 50%;
+  z-index          : 1;
+  width            : 50px;
+  height           : 50px;
+  margin           : auto;
+  border           : 6px solid #f3f3f3;
+  border-radius    : 50%;
+  border-top       : 6px solid #ed1c24;
+  -webkit-animation: spin 2s linear infinite;
+  animation        : spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position                  : relative;
+  -webkit-animation-name    : animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name            : animatebottom;
+  animation-duration        : 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom : -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom : 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom : -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom : 0;
+    opacity: 1
+  }
+}
+
+/* custom admin*/
+/* #main_body {
+  padding-top   : 210px;
+  padding-bottom: 60px;
+  padding-right : 0px;
+  padding-left  : 0px;
+} */
+
+#main_body.customer {
+  padding-top   : 70px;
+  padding-bottom: 60px;
+  padding-right : 0px;
+  padding-left  : 0px;
+}
+
+.ReloadButton {
+  margin-left: 12px;
+  font-size  : 15px;
+  color      : #aeaeae;
+  ;
+  cursor    : pointer;
+  transition: all 0.4s;
+}
+
+.ReloadButton:hover {
+  color: #f3474d;
+}
+
+.RightInfo {
+  right: -20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #main_body {
+    margin-top: -35px;
+  }
+}

@@ -1,0 +1,296 @@
+.TestCam {
+    height: 100%;
+    width : 100%;
+
+    .intro-content {
+        .create-account2-title {
+            padding    : 10px 20px;
+            color      : #000000 !important;
+            font-size  : 16px !important;
+            font-weight: 700 !important;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .txt-content {
+            padding: 10px 20px;
+        }
+    }
+
+    .carousel-root {
+
+        .control-dots,
+        .carousel-status {
+            display: none !important;
+        }
+
+    }
+
+    .carousel .slide img {
+        width: auto !important;
+    }
+
+    .fa-camera {
+        font-size: 15px;
+    }
+
+    .title {
+        color      : #FFFFFF !important;
+        font-size  : 16px !important;
+        font-weight: 700 !important;
+    }
+
+    .this {
+        font-weight: 600;
+        color      : #18a0fb;
+        cursor     : pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .note {
+        padding: 10px 20px;
+    }
+
+    li.slide {
+        padding: 0;
+    }
+
+    .img_content {
+        width  : fit-content;
+        height : auto;
+        display: flex;
+        gap    : 60px;
+        margin : 10px auto;
+
+        .block-image {
+            width    : auto;
+            min-width: 320px;
+            height   : auto;
+        }
+
+        .upload-image-preview {
+            max-width: 320px;
+            height   : 210px;
+        }
+
+        .lbl_error {
+            color: red;
+
+            &.lable_left {
+                height    : auto;
+                padding   : 5px;
+                text-align: center;
+                width     : 320px;
+            }
+
+            &.lable_right {
+                height    : auto;
+                padding   : 5px;
+                text-align: center;
+                width     : 320px;
+            }
+        }
+    }
+
+    .lable_left,
+    .lable_right {
+        height    : 25px;
+        padding   : 5px;
+        text-align: center;
+    }
+
+    .img_left,
+    .img_right {
+        //height    : 100%;
+        max-height: 300px;
+        padding   : 5px;
+        position  : relative;
+    }
+
+    .img-div {
+        background-color: #515151;
+    }
+
+    .img {
+        width: 100%;
+        top  : 0;
+        left : 0;
+    }
+
+    .img-border {
+        background: url('/images/background_cam.png');
+        margin    : 0;
+        border    : 1px solid rgba(255, 255, 255, 0.7);
+        height    : 210px;
+
+        span {
+            width: 100% !important;
+        }
+    }
+
+    .img-btn {
+        margin-top: 10px;
+        position  : absolute;
+        bottom    : 20px;
+        text-align: center;
+        width     : 100%;
+    }
+
+    video {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width    : 100% !important;
+    }
+
+}
+
+@media (max-width: 865px) {
+    .TestCam {
+        .img_content {
+            flex-direction: column;
+            gap           : 50px;
+
+            .img-btn {
+                margin-top: 10px;
+                position  : absolute;
+                bottom    : 20px;
+                text-align: center;
+                width     : 100%;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    .TestCam {
+        .intro-content {
+            padding-top: 10px;
+        }
+
+        .img_content {
+            .custom-view-image {}
+
+            flex-direction: column;
+            gap           : 50px;
+            width         : fit-content;
+            height        : auto;
+            display       : flex;
+            margin        : 10px auto;
+
+            .block-image {
+                width    : auto;
+                min-width: 320px !important;
+                height   : auto;
+            }
+
+            .upload-image-preview {
+                max-width: 320px !important;
+                height   : 210px;
+            }
+
+            .lbl_error {
+                color: red;
+
+                &.lable_left {
+                    height    : auto;
+                    padding   : 5px;
+                    text-align: center;
+                    width     : 320px !important;
+                }
+
+                &.lable_right {
+                    height    : auto;
+                    padding   : 5px;
+                    text-align: center;
+                    width     : 320px !important;
+                }
+            }
+
+            .img-btn {
+                margin-top: 10px;
+                position  : absolute;
+                bottom    : 20px;
+                text-align: center;
+                width     : 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .TestCam {
+        .intro-content {
+            padding-top: 10px;
+
+            .create-account2-title {
+                padding    : 10px 20px;
+                color      : #000000 !important;
+                font-size  : 16px !important;
+                font-weight: 700 !important;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .txt-content {
+                padding: 10px 20px;
+            }
+        }
+
+        .img_left,
+        .img_right {
+            padding: 0 !important;
+        }
+    }
+}
+
+
+.label-btn-upload {
+
+    background-color: #303C52;
+    color           : #FFFFFF;
+    height          : 30px;
+    line-height     : 30px;
+    cursor          : pointer;
+    padding         : 0px 20px 5px 20px;
+    margin-right    : 10px;
+
+    &:hover {
+        background-color: #404040;
+        color           : #FFFFFF 50%;
+    }
+}
+
+
+.label-btn-take-photo {
+    // background-color: themed('section-body-text-acitve');
+    background-color: #DF7A00;
+    color           : #F5F5F5;
+    height          : 30px;
+    line-height     : 30px;
+    cursor          : pointer;
+    padding         : 0px 20px 5px 20px;
+    // margin-bottom: 0.5rem;
+
+
+    &:hover {
+        background-color: #DF7A00 50%;
+    }
+}
+
+.btn-take-photo {
+    // background-color: themed('section-body-text-acitve');
+    background-color: #DF7A00;
+    color           : #F5F5F5;
+    height          : 30px;
+    line-height     : 30px;
+    border-radius   : 5px;
+    cursor          : pointer;
+    padding         : 0px 20px 5px 20px;
+
+    // margin-bottom: 0.5rem;
+    &:hover {
+        background-color: #DF7A00 50%;
+    }
+}

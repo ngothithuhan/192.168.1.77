@@ -1,0 +1,133 @@
+.truy-van-ls-gd-customize-body {
+    margin : 0 !important;
+    padding: 48px 0px 0px 0px !important;
+}
+
+.truy-van-lich-su-giao-dich-container {
+    background-color: #E5E5E5;
+    overflow-x      : hidden;
+    overflow-y      : auto;
+
+    .truy-van-lich-su-giao-dich-body {
+        margin          : 10px;
+        background-color: white;
+
+        .table-tvlsdg-container {
+            .ReactTable {
+                //reset custom css react table
+                margin-left : 0 !important;
+                margin-right: 0 !important;
+
+            }
+
+            .table-tvlsdg-content-header {
+                display       : flex;
+                flex-direction: row;
+                align-items   : center;
+                padding-top   : 10px;
+
+                .title-table {
+                    width      : 200px;
+                    font-size  : 24px;
+                    font-weight: 700;
+                    margin     : 0 5px;
+                }
+
+                .inputs-table {
+                    display        : flex;
+                    flex-direction : row;
+                    align-items    : center;
+                    justify-content: flex-end;
+                    width          : calc(100% - 220px);
+
+                    .cus-input-date {
+                        width       : 170px;
+                        display     : flex;
+                        align-items : center;
+                        margin-right: 15px;
+
+                        input {
+                            cursor         : pointer;
+                            border-radius  : unset;
+                            padding-left   : 5px !important;
+                            //background   : #DEE1E7;
+                            border         : 1px solid #E4E4E4;
+                            color          : black !important;
+                        }
+
+                        i {
+                            position : relative;
+                            right    : 20px;
+                            font-size: 15px;
+                        }
+
+                        ::-webkit-input-placeholder {
+                            /* Edge */
+                            color: #E5E5E5;
+                        }
+
+                        :-ms-input-placeholder {
+                            /* Internet Explorer 10-11 */
+                            color: #E5E5E5;
+                        }
+
+                        ::placeholder {
+                            color: #E5E5E5;
+                        }
+                    }
+
+                    .btn-search-tvlsgd {
+                        border          : none;
+                        outline         : none;
+                        cursor          : pointer;
+                        height          : 34px;
+                        width           : 85px;
+                        color           : white;
+                        background-color: #DF7A00;
+                        font-size       : 14px;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+
+                    .div-select-dbcode {
+                        margin-right: 15px;
+
+                        .Select-control,
+                        .Select-input {
+                            height: 32px;
+                        }
+
+                        .Select-placeholder,
+                        .Select--single>.Select-control .Select-value {
+                            line-height: 32px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .history-trading-btn {
+        position        : relative;
+        top             : -49px;
+        left            : 270px;
+        height          : 28px;
+        padding         : 0 10px;
+        border          : 1px solid #DF7A00;
+        color           : #DF7A00;
+        background-color: transparent;
+        border-radius   : unset;
+        cursor          : pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        i {
+            margin-left: 5px;
+        }
+    }
+}

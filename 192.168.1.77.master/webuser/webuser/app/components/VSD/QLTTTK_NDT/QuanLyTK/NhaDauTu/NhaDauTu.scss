@@ -1,0 +1,427 @@
+.acc-ndt-customize-body {
+    margin : 0 !important;
+    padding: 48px 0px 0px 0px !important;
+}
+
+input[type="radio"] {
+    position    : relative;
+    top         : 1px;
+    margin-right: 5px;
+    cursor      : pointer;
+}
+
+label {
+    &.cursor {
+        cursor: pointer;
+    }
+}
+
+.ptbm-content {
+    .text-input {
+        .edit-field {
+            background-color: #fff !important;
+            border          : 1px solid #E5E5E5 !important;
+        }
+
+        .not-edit-field {
+            background: #DEE1E7 !important;
+        }
+    }
+}
+
+.dmk-content {
+    .text-input {
+        .edit-field {
+            background-color: #fff !important;
+            border          : 1px solid #E5E5E5 !important;
+        }
+
+        .not-edit-field {
+            background: #DEE1E7 !important;
+        }
+    }
+}
+
+.dmp-content {
+    .text-input {
+        .edit-field {
+            background-color: #fff !important;
+            border          : 1px solid #E5E5E5 !important;
+        }
+
+        .not-edit-field {
+            background: #DEE1E7 !important;
+        }
+    }
+}
+
+.account-ndt-container {
+    display       : flex;
+    flex-direction: row;
+    width         : 100%;
+    height        : calc(100vh - 48px);
+    overflow      : hidden;
+
+    .px-0 {
+        padding-left : 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .mt-10 {
+        margin-top: 10px !important;
+    }
+
+    .mb-10 {
+        margin-bottom: 10px !important;
+    }
+
+    .account-ndt-left {
+
+        width           : 225px;
+        background-color: #EEEFF5;
+        box-shadow      : 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+
+        .sidebar-containter {
+            .sidebar-content {
+                .parent {
+                    cursor: pointer;
+
+                    &.active {
+                        background-color: #EDE3DD;
+                        color           : #DF7A00;
+                        border-right    : 2px solid #DF7A00;
+                    }
+
+                    height      : 45px;
+                    display     : flex;
+                    align-items : center;
+                    font-size   : 14px;
+                    padding-left: 10px;
+
+                    i {
+                        width: 10px;
+                    }
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .account-ndt-right {
+        width              : calc(100% - 225px);
+        // width           : 100%;
+        padding            : 10px;
+        background-color   : #EEEFF5;
+
+
+        .acc-main-content-container {
+            height  : 100%;
+            width   : 100%;
+            overflow: auto;
+
+            .manage-account-ndt {
+                background-color: #fff;
+                padding         : 10px;
+                display         : block;
+                overflow        : auto;
+
+                &.without-background {
+                    background-color: unset;
+                }
+
+                .manage-acount-ndt-header {
+                    height     : 40px;
+                    font-size  : 24px;
+                    font-weight: 700;
+                }
+
+                .btn-edit {
+                    width           : 50px;
+                    border          : none;
+                    outline         : none;
+                    color           : white;
+                    background-color: #DF7A00;
+                }
+
+                .back {
+                    cursor: pointer;
+                }
+
+                .ndt-acc-title {
+                    height     : 36px;
+                    font-weight: 700;
+                    font-size  : 24px;
+                    margin-top : 10px;
+                }
+
+                .ndt-general-info-container {
+                    width      : 100%;
+                    // overflow: auto;
+
+                    .ndt-stpper-container {
+                        background-color: #fff;
+                        padding-bottom  : 20px;
+                    }
+
+                    .ndt-add-info-acc-container {
+                        overflow  : hidden;
+                        margin-top: 10px;
+
+                        .background-white {
+                            background-color: #fff;
+                        }
+
+                        .btn-next-prev {
+                            .btn-next {
+                                &.no-absolute {
+                                    position: relative !important;
+                                    margin  : 0 !important;
+                                    float   : right;
+                                }
+
+                                position        : absolute;
+                                right           : 0;
+                                background-color: #DF7A00;
+                                height          : 40px;
+                                width           : 85px;
+                                color           : white;
+                                border          : none;
+                                outline         : none;
+
+                                &:hover {
+                                    opacity: 0.9;
+                                }
+                            }
+
+                            .btn-prev {
+                                height          : 40px;
+                                width           : 85px;
+                                color           : black;
+                                background-color: #DEE1E7;
+                                border          : none;
+                                outline         : none;
+
+                                &:hover {
+                                    opacity: 0.9;
+                                }
+                            }
+                        }
+
+                        .ndt-pull-right {
+                            display        : flex;
+                            justify-content: flex-end;
+                        }
+
+                        hr {
+                            margin: 0 auto !important;
+                            width : 95% !important;
+                        }
+
+                        .fatca-child {
+                            height     : 40px;
+                            padding-top: 12px;
+                        }
+
+                        .ndt-step-final {
+                            max-width: 650px;
+                            overflow : auto;
+                            margin   : 20px auto;
+                            padding  : 20px;
+
+                            .text-finish {
+                                margin-bottom: 10px;
+                                font-size    : 24px;
+                                font-weight  : 700;
+                                color        : black;
+                                text-align   : center;
+                            }
+
+                            .padding-20 {
+                                padding: 20px;
+                            }
+
+                            .btn-back-acc {
+                                background   : linear-gradient(180deg, #303C52 0%, #121720 100%);
+                                color        : rgba(255, 255, 255, 1);
+                                border       : none;
+                                outline      : none;
+                                border-radius: unset;
+                                margin-top   : 10px;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+            .tltk-container {
+                padding: 10px;
+
+                .tltk-header {
+                    height     : 40px;
+                    font-size  : 24px;
+                    font-weight: 700;
+                }
+
+                .tltk-content {
+                    display       : flex;
+                    flex-direction: row;
+                    flex-wrap     : wrap;
+                    width         : 100%;
+
+                    .tltk-child {
+                        display         : flex;
+                        flex-direction  : row;
+                        width           : 30%;
+                        align-items     : center;
+                        margin-right    : 20px;
+                        margin-bottom   : 20px;
+                        padding         : 0 10px;
+                        height          : 65px;
+                        background-color: #fff;
+
+                        .tltk-content-left {
+                            width: 10%;
+                        }
+
+                        .tltk-content-right {
+                            width: 10%;
+                        }
+
+                        .tltk-content-center {
+                            width: 80%;
+
+                            .name {
+                                font-size: 14px;
+                                color    : black;
+                            }
+
+                            .size {
+                                font-size  : 10px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+
+            @mixin share-container {
+                width           : 430px;
+                background-color: #fff;
+                position        : absolute;
+                top             : 50%;
+                left            : 50%;
+                margin-right    : -50%;
+                transform       : translate(-50%, -50%);
+                padding         : 10px;
+
+            }
+
+            @mixin share-header {
+                height     : 40px;
+                font-size  : 24px;
+                font-weight: 700;
+            }
+
+            @mixin share-content {
+
+                display       : flex;
+                flex-direction: column;
+                width         : 100%;
+
+                .text-input {
+                    height        : 70px;
+                    display       : flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size  : 14px;
+                        font-weight: 400;
+                        color      : rgba(0, 0, 0, 0.5);
+
+                    }
+
+                    input,
+                    select {
+                        background-color: #F3F3F3;
+                        padding-left    : 10px;
+                        color           : black;
+                        height          : 40px;
+                        font-size       : 14px;
+                        border          : none;
+                        outline         : none;
+                    }
+
+                    select {
+                        cursor: pointer;
+                    }
+
+                }
+
+                button {
+                    height          : 56px;
+                    width           : 100%;
+                    background-color: #DF7A00;
+                    text-align      : center;
+                    border          : none;
+                    outline         : none;
+                    color           : #fff;
+                    margin-top      : 10px;
+                    font-size       : 16px;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+
+            }
+
+            .ptbm-containter {
+                @include share-container;
+
+                .ptbm-header {
+                    @include share-header;
+                }
+
+                .ptbm-content {
+                    @include share-content;
+                }
+            }
+
+
+            .dmk-container {
+                @include share-container;
+
+                .dmk-header {
+                    @include share-header;
+                }
+
+                .dmk-content {
+                    @include share-content;
+                }
+
+            }
+
+            .dmp-container {
+                @include share-container;
+
+                .dmp-header {
+                    @include share-header;
+                }
+
+                .dmp-content {
+                    @include share-content;
+                }
+            }
+
+
+        }
+    }
+}

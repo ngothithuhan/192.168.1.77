@@ -1,0 +1,56 @@
+.account-detail {
+    min-height: 80vh;
+
+    .header-nav {
+        .all-tab {
+            display          : flex;
+            //justify-content: space-between;
+
+            .tab-item {
+                padding         : 10px 20px;
+                font-weight     : 600;
+                font-family     : Arial, Helvetica, sans-serif;
+                background-color: rgb(224, 213, 213);
+                border-bottom   : 1px solid #ddd;
+                margin-bottom   : 5px;
+                cursor          : pointer;
+
+                &.active {
+                    background-color: white;
+                    border-top      : 3px solid rgb(89, 118, 247);
+                    border-left     : 1px solid #ddd;
+                    border-right    : 1px solid #ddd;
+                    border-bottom   : unset;
+                    padding         : 7px 19px
+                }
+            }
+        }
+    }
+
+    .account-modal-detail-body {
+        .danh-muc-dau-tu-container {
+            height: inherit !important;
+        }
+
+        .saoke-lsdg-tien-container {
+            background-color: white;
+        }
+
+        .sao-ke-ccq-container {
+            background-color: white;
+        }
+
+        .truy-van-lich-su-giao-dich-container {
+            background-color: white;
+        }
+
+        .margintopNewUI,
+        .container {
+            border-color: white !important;
+
+            .title-content {
+                display: none;
+            }
+        }
+    }
+}

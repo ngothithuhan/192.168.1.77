@@ -1,0 +1,30 @@
+.modal-acc-overview-lg {
+    background: rgba(0, 0, 0, 0.6);
+
+    .modal-dialog {
+        width    : 95% !important;
+        transform: translate(0, 20px) !important;
+
+        .modal-content {
+            border: unset !important;
+        }
+
+        .modal-header {
+            text-align      : center;
+            padding         : 6px !important;
+            font-size       : 20px;
+            font-weight     : 600;
+            color           : white;
+            background-color: #DF7A00;
+            border-radius   : 5px 5px 0 0;
+
+
+            .modal-title {
+                text-transform: uppercase;
+                font-size     : 17px;
+                font-weight   : 600;
+            }
+        }
+    }
+
+}

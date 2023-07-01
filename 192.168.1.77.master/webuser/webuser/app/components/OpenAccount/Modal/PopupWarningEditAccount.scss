@@ -1,0 +1,35 @@
+.modal-popup-warning-open-acc3 {
+
+    //reset modal
+    @media (min-width: 768px) {
+        .modal-dialog {
+            width : 400px;
+            margin: 100px auto;
+        }
+    }
+
+    .modal-pwoa3-body {
+        height: 450px;
+
+        .modal-pwoa3-infor {
+            font-size  : 14px;
+            font-weight: 600;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        .add-pdt-10 {
+            padding-top: 10px;
+        }
+
+        .add-pdb-10 {
+            padding-bottom: 10px;
+        }
+
+        .text-normal {
+            font-size: 14px;
+        }
+    }
+}

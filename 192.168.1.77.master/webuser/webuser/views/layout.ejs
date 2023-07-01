@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%- title %>
+  </title>
+
+  <!-- Viewport mobile tag for sensible mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- <link rel="stylesheet" type="text/css"
+     href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/> -->
+  <!-- <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
+  <!--
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+
+  <!--STYLES-->
+  <link rel="stylesheet" href="/styles/account.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/bootstrap-responsive.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/bootstrap-theme.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/bootstrap.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/comparecmd.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/css/all.min.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/custom.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/custombootstrap.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/customMenu.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/datapicker.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/datetime.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/demo.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/home.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/importer.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/indexdock.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/layout.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/menu.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/Muli_600.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/Muli_700_800.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/newcss/css/fontAwesome/css/font-awesome.min.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/newcss/css/style.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/nhgs.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/notifycustom.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/request-change.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/responsiveLayout.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/shgs.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/sign.css?v=20210625_112600">
+  <link rel="stylesheet" href="/styles/style.bundle.css?v=20210625_112600">
+  <!--STYLES END-->
+  <script>
+    var requestIdSent = {};
+    var requestIdReceived = {};
+
+    //var licenseKey = "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PExpY2Vuc2UgaWQ9IkwwMDEiPjxUZW5QaGFuTWVtPkJrYXZDQSBTaWduZXIgUGx1Z2luPC9UZW5QaGFuTWVtPjxOZ3VvaUNhcD5Ca2F2IENvcnBvcmF0aW9uPC9OZ3VvaUNhcD48RG9uVmlEdW9jQ2FwPlZQIEJhbms8L0RvblZpRHVvY0NhcD48SGFuU3VEdW5nPjxOZ2F5Q2FwPjAwLTAwLTAwMDA8L05nYXlDYXA+PE5nYXlIZXRIYW4+MDAtMDAtMDAwMDwvTmdheUhldEhhbj48L0hhblN1RHVuZz48UXV5ZW5TdUR1bmc+PFVuZ0R1bmc+KjwvVW5nRHVuZz48TW9kdWxlWE1MPjE8L01vZHVsZVhNTD48TW9kdWxlUERGPjE8L01vZHVsZVBERj48TW9kdWxlT09YTUw+MTwvTW9kdWxlT09YTUw+PE1vZHVsZUNNUz4xPC9Nb2R1bGVDTVM+PE1vZHVsZUNlcnRpZmljYXRlVXRpbHM+MTwvTW9kdWxlQ2VydGlmaWNhdGVVdGlscz48TW9kdWxlSW1wb3J0Q2VydD4xPC9Nb2R1bGVJbXBvcnRDZXJ0PjxNb2R1bGVYTUw+MDwvTW9kdWxlWE1MPjwvUXV5ZW5TdUR1bmc+PFNpZ25hdHVyZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PFNpZ25lZEluZm8+PENhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy14bWwtYzE0bi0yMDAxMDMxNSNXaXRoQ29tbWVudHMiLz48U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIi8+PFJlZmVyZW5jZSBVUkk9IiI+PFRyYW5zZm9ybXM+PFRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNlbnZlbG9wZWQtc2lnbmF0dXJlIi8+PC9UcmFuc2Zvcm1zPjxEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjc2hhMSIvPjxEaWdlc3RWYWx1ZT5JNHR5dTZEcFdPWG5YcTdNbDhTbWtXMURMbHc9PC9EaWdlc3RWYWx1ZT48L1JlZmVyZW5jZT48L1NpZ25lZEluZm8+PFNpZ25hdHVyZVZhbHVlPktxQnV1MUkxM2xDNGlJWmFqZkJuc2RxZHRLenE3cE5qT1ZPdzRMekxWYkRReFVaZ2NVZWg3amhKWnM3T2FMZjF0OTNpcGR4NkVYd3cNCmxJcjRzMjRmMDh2SEhIUmV1a3d0WVJjUTFVMG9CV3R2SU1GaTk0dmpCVGwvZjJ0dDhXbHVxQ0NqNDNPQWlRZmFidnVqdmllSTZ3dE0NClhsSmJLemkxODlBZVFKN2YzVk53bXpKNEZnNHFrbkV4LzkzMmdiQjBPOGx4VG5zblhGc2VwQXphWURzVlduZFhSNzVSdVBPMWJaZUkNCmR4WXZZWmxOY2dDSDc0N2FLMDJ5MnpGRm1Gc2xuMFQ5bHRuVVhXQlJHcXZWejdDMDR0NXFkRG5UK3M1a1BoZ2V1Uk15dzQ4enRCbmQNCmNsUFdQZ0pEUHB1dTk0K1k0SjlRY2dSTlNRaW5BTmw2VW81N0RnPT08L1NpZ25hdHVyZVZhbHVlPjxLZXlJbmZvPjxYNTA5RGF0YT48WDUwOVN1YmplY3ROYW1lPkM9Vk4sU1Q9SMOgIE7hu5lpLEw9Q+G6p3UgR2nhuqV5LE89Q8O0bmcgdHkgQ+G7lSBwaOG6p24gQmthdixPVT1CYW4gQU5NLENOPUJrYXZDQSBMaWNlbnNlLFVJRD1NU1Q6MDEwMTM2MDY5Ny1Ca2F2Q0FMaWNlbnNlPC9YNTA5U3ViamVjdE5hbWU+PFg1MDlDZXJ0aWZpY2F0ZT5NSUlFekRDQ0E3U2dBd0lCQWdJUVZBTkRQQmsvQ1pwbTNwTmRJQll1aFRBTkJna3Foa2lHOXcwQkFRVUZBREJKTVFzd0NRWURWUVFHDQpFd0pXVGpFT01Bd0dBMVVFQnhNRlNHRnViMmt4R1RBWEJnTlZCQW9URUVKcllYWWdRMjl5Y0c5eVlYUnBiMjR4RHpBTkJnTlZCQU1UDQpCa0pyWVhaRFFUQWVGdzB4TmpBMU16QXdOREF4TURSYUZ3MHhPREEzTWprd05EQXhNRFJhTUlHMU1Td3dLZ1lLQ1pJbWlaUHlMR1FCDQpBUXdjVFZOVU9qQXhNREV6TmpBMk9UY3RRbXRoZGtOQlRHbGpaVzV6WlRFWE1CVUdBMVVFQXd3T1FtdGhka05CSUV4cFkyVnVjMlV4DQpFREFPQmdOVkJBc01CMEpoYmlCQlRrMHhJakFnQmdOVkJBb01HVVBEdEc1bklIUjVJRVBodTVVZ2NHamh1cWR1SUVKcllYWXhGVEFUDQpCZ05WQkFjTURFUGh1cWQxSUVkcDRicWxlVEVTTUJBR0ExVUVDQXdKU01PZ0lFN2h1NWxwTVFzd0NRWURWUVFHRXdKV1RqQ0NBU0l3DQpEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSURuUTBBR3lnZ2gzTHpISXFwcUE4TFJOL2NwTURrV1FJbFA2YjhyDQpLQy9BbkdxNGJ4YXdORm5GV3o0NndpN1NWb0xicjY1Q0tlZjhDSjBJS0JsS0RVWWZjVHVVWTYxNEQ0NGtxMjRvWk1Vb01meTBDdm1lDQp3aU84TDV3Snh5TXNJTTNONVAxQVVwRU9OR0Q3UDdkbmJTNEFDcHpEdmRwMWUwZlI5dVNuNXhJNzVtOExUZzBEbTRVb0NZS0JaTlNXDQpqOUg0Tm84V240RjFXQ3lRb3FYY0IrVFJmVVZSLzdVcGY0YW9zOTdDVVZ2ZEd3V2xVdXlCeEcrcU1YaTdhZlV3bVlWTW9qVFhsUVVhDQp4QUxUQUpqblYvL2F0a3NoQy96NzNiZGh2WHo0cDA1YzBDb3BUNlBMYXRsRGx3RUUxcDU0Vk9mUGh3aE1VWDM5ZFByYzh6cStzMHNDDQpBd0VBQWFPQ0FVRXdnZ0U5TURFR0NDc0dBUVVGQndFQkJDVXdJekFoQmdnckJnRUZCUWN3QVlZVmFIUjBjRG92TDI5amMzQXVZbXRoDQpkbU5oTG5adU1CMEdBMVVkRGdRV0JCUWpGWTBPdmhXamtZY0Q3bm4yekF3NkFtdnU0VEFNQmdOVkhSTUJBZjhFQWpBQU1COEdBMVVkDQpJd1FZTUJhQUZCNndEMGlYMzlERFo2ZEdoRHRZTzRnTlU1U0dNSDhHQTFVZEh3UjRNSFl3ZEtBam9DR0dIMmgwZEhBNkx5OWpjbXd1DQpZbXRoZG1OaExuWnVMMEpyWVhaRFFTNWpjbXlpVGFSTE1Fa3hEekFOQmdOVkJBTU1Ca0pyWVhaRFFURVpNQmNHQTFVRUNnd1FRbXRoDQpkaUJEYjNKd2IzSmhkR2x2YmpFT01Bd0dBMVVFQnd3RlNHRnViMmt4Q3pBSkJnTlZCQVlUQWxaT01BNEdBMVVkRHdFQi93UUVBd0lGDQpvREFwQmdOVkhTVUVJakFnQmdnckJnRUZCUWNEQVFZSUt3WUJCUVVIQXdJR0Npc0dBUVFCZ2pjS0F3d3dEUVlKS29aSWh2Y05BUUVGDQpCUUFEZ2dFQkFDL0ZIMzV0TzBkeUFVdnBwQkJpZEU5c1RjYS8yRkwreUJQMWRQVWdwdEpUYzBmYmxqZTZxL0dqcXhJOFhyRTUremJmDQppUElROSt3dUhXb1VwUFpzdGQxSWhOUmNCZldvYm8rV3hEM0thWGJVZS9KRkNRalNoalVOczMxY2tBUGkxMlJISzdSV3NrOGx2bkdYDQo3QWNSK014bm5kRUdmOG1kMlhyWXdTd3dwYmpidXRHUnh3djJlRUwvNlZNRlhtQmM4ZlBLK0RpbjI0YVNWV09NOVdOU21aa1gxYkJ6DQprSVZMN2ViWkp3WnhUMElKVmJheDdkZ0U1V2hNb2xrellWNHl1K2xsU3RoQWtucENOQzhNVXFzb2REc0htaUZYc1M5bDJQZkRhZ1g0DQpIMnpKQkhJSEp0bkcrNEFQWHpHKzZZK2EyZ2grMytFYlpMNGxwRzY1a0FCclVtcz08L1g1MDlDZXJ0aWZpY2F0ZT48WDUwOUNlcnRpZmljYXRlPk1JSUVOekNDQXgrZ0F3SUJBZ0lLWVFyeFZBQUFBQUFBRHpBTkJna3Foa2lHOXcwQkFRVUZBREIrTVFzd0NRWURWUVFHRXdKV1RqRXoNCk1ERUdBMVVFQ2hNcVRXbHVhWE4wY25rZ2IyWWdTVzVtYjNKdFlYUnBiMjRnWVc1a0lFTnZiVzExYm1sallYUnBiMjV6TVJzd0dRWUQNClZRUUxFeEpPWVhScGIyNWhiQ0JEUVNCRFpXNTBaWEl4SFRBYkJnTlZCQU1URkUxSlF5Qk9ZWFJwYjI1aGJDQlNiMjkwSUVOQk1CNFgNCkRURTFNRFV4TlRBek1qVTBPRm9YRFRJd01EVXhOVEF6TXpVME9Gb3dTVEVMTUFrR0ExVUVCaE1DVms0eERqQU1CZ05WQkFjVEJVaGgNCmJtOXBNUmt3RndZRFZRUUtFeEJDYTJGMklFTnZjbkJ2Y21GMGFXOXVNUTh3RFFZRFZRUURFd1pDYTJGMlEwRXdnZ0VpTUEwR0NTcUcNClNJ…
+    var licenseKey = "PD94bWwgdm";
+    var KEYCSRF = '<%= _csrf %>';
+    window.overlord = { csrf: "<%= _csrf %>" };
+    var SIGN_TRANSACTIONS = '<%= sails.config.SIGN_TRANSACTIONS %>'.split(",");
+    var DISABLE_SIGNATURE = ('true' == '<%= sails.config.DISABLE_SIGNATURE %>');
+    var SSO_ChangePassword_URL = ('<%= sails.config.SSO_ChangePassword_URL %>');
+    // Set selected Serial from Server-side
+    var selectedSerial = '<%= req.session==null?"":(req.session.hashedPassword==null?"":req.session.hashedPassword) %>';
+    var transparentBindCert = true;
+    var logon_username = '<%= req.session==null?"":(req.session.userinfo==null?"":req.session.userinfo.USERID) %>';
+    var MSGTYPE = "T";
+    var TLTXCD = "FOTX";
+    var AUTOID = Math.round(new Date().getTime() / 1000);
+    var TLID = '<%= req.session==null?"":(req.session.userinfo==null?"":req.session.userinfo.TLID) %>';
+    var queuedAction = new Array();
+    var APPNAME = '<%= sails.config.URL_APP %>';
+    var TXNUM = TLID + "99";
+    function fixHeight() {
+      if ($('.FixHeightDivContent').css("display") == "block") {
+        var pv_height = window.innerHeight - $('.FixHeightDivContent').offset().top - 40;
+        pv_height = pv_height > 220 ? pv_height : 220;
+        $(".FixHeightDivContent").height(pv_height);
+        $(".FixHeightDivContent .ReactTable").css("max-height", pv_height);
+        console.log("fixHeight:", pv_height);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+    var iscsrf = '<%= sails.config.csrf?true:false %>' === 'true' ? true : false;
+    var urlcsrf = './csrfToken';
+
+  </script>
+  <div id="layout">
+
+  </div>
+  <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
+        that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different template engine (handlebars, jade, dust, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+  <!--TEMPLATES-->
+  
+  <!--TEMPLATES END-->
+
+
+  <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+  <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <!-- <script src="/linker/js/socket.io.js"></script> -->
+
+
+  <!--SCRIPTS-->
+  <script src="/js/dependencies/sails.io.js?v=20210625_112600"></script>
+  <script src="/js/dependencies/jquery-3.5.1.min.js?v=20210625_112600"></script>
+  <script src="/js/dependencies/jquery.min.js?v=20210625_112600"></script>
+  <script src="/js/dependencies/parts-selector.js?v=20210625_112600"></script>
+  <script src="/js/lib/bootstrap.min.js?v=20210625_112600"></script>
+  <script src="/jsx/vendor.bundel.js?v=20210625_112600"></script>
+  <script src="/jsx/index.bundel.js?v=20210625_112600"></script>
+  <!--SCRIPTS END-->
+  <div id="expireSession"></div>
+  <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+  <div class="modal fade" id="signingModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="modalSigingHeader">Chọn chứng thư số</h4>
+        </div>
+        <div class="modal-body fill" id="signing">
+          <div class="">
+            <!-- <span class="input-group-btn">
+                                    <button class="btn btn-success btn-file" onclick="CheckPluginValid(CheckPluginCallbackGetCert)">
+                                        <span class="buttonText">Load chứng thư</span>
+                                    </button>
+                                </span> -->
+            <span class="input-group-btn">
+              <span class="span-custom"></span>
+            </span>
+            <select id="selectCert" onchange="selectChange()" class="form-control" name="size">
+              <option value="">Chọn chứng thư số</option>
+            </select>
+          </div>
+          <div class="">
+            <span class="input-group-btn">
+              <span class="span-custom"></span>
+            </span>
+            <input id="selectCertIssuer" type="text" class="form-control  text-custom" placeholder="Nhà cung cấp"
+              readonly="readonly">
+          </div>
+          <div class="">
+            <span class="input-group-btn">
+              <span class="span-custom"></span>
+            </span>
+            <input id="selectCertSerial" type="text" class="form-control text-custom"
+              placeholder="Số serial của chứng thư số" aria-describedby="sizing-addon2" readonly="readonly">
+          </div>
+          <div class="">
+            <span class="input-group-btn">
+              <span class="buttonText span-custom"></span>
+            </span>
+            <input id="selectCertExpire" type="text" class="form-control text-custom" placeholder="Hạn sử dụng"
+              aria-describedby="sizing-addon2" readonly="readonly">
+          </div>
+          <div id="signingAdvance" class="hide">
+            <div class="">
+              <span class="input-group-btn">
+                <span class="span-custom"></span>
+              </span>
+              <input id="singnatureID" type="text" class="form-control text-custom" placeholder="SignatureID"
+                aria-describedby="sizing-addon2">
+            </div>
+            <div class="">
+              <span class="input-group-btn">
+                <span class="span-custom"></span>
+              </span>
+              <input id="tagSigning" type="text" class="form-control text-custom" placeholder="tagSigning"
+                aria-describedby="sizing-addon2">
+            </div>
+            <div class="">
+              <span class="input-group-btn">
+                <span class="span-custom"></span>
+              </span>
+              <input id="nodeToSign" type="text" class="form-control text-custom" placeholder="nodeToSign"
+                aria-describedby="sizing-addon2">
+            </div>
+            <div class="">
+              <span class="input-group-btn">
+                <span class="span-custom"></span>
+              </span>
+              <input type="checkbox" id="enableTimestamp" name="Enable Time" value="newsletter">
+              <label for="enableTimestamp"> Add Timestamp Default</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="modalHeader">Header</h4>
+        </div>
+        <div class="modal-body">
+          <p id="modalError"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    $(function () {
+      if (DISABLE_SIGNATURE) {
+        $('#spanbtnSelectCert').hide();
+      } else {
+        if (selectedSerial.length > 0) {
+          document.getElementById('selectCertSerial').value = SERIAL_INPUT_PREFIX + selectedSerial;
+          document.getElementById('selectCertSerial').innerHTML = SERIAL_INPUT_PREFIX + selectedSerial;
+          ScheduleCheckSign();
+          // Init token serial here
+          if (!getSerialSelected() || webSocket == null)
+            ShowSelectCert();
+        }
+      }
+    });
+    //tuan.nguyenquang: Fix table resize screen
+    $(window).resize(function () {
+      fixHeight()
+    });
+  </script>
+</body>
+
+</html>

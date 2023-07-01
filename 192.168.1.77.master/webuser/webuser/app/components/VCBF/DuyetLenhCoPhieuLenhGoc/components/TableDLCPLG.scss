@@ -1,0 +1,21 @@
+.table-dlcplg {
+    .table-dlcplg-btn-container {
+        .table-dlcplg-btn-detail {
+            width      : 60px;
+            height     : 25px;
+            display    : inline-block;
+            // background : #DF7A00;
+            // color      : white;
+            background: transparent;
+            color: rgb(0, 118, 163);
+            text-decoration: underline;
+            border     : none;
+            outline    : none;
+            margin-left: 5px;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}

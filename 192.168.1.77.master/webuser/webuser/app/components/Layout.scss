@@ -1,0 +1,50 @@
+#main_body {
+    padding-top   : 115px;
+    padding-bottom: 60px;
+    padding-right : 0px;
+    padding-left  : 0px;
+}
+
+#main_body.admin.container {
+    width       : auto;
+    margin-right: 10px;
+    margin-left : 10px;
+
+    .custom-new-dau-tu-dinh-ki {
+        .add-spaces {
+            background-color: #FFFFFF !important;
+        }
+    }
+
+    .custom-combo-dat-lenh {
+        display: flex;
+        width  : 100%;
+
+        .Select {
+            width: 100%;
+        }
+
+        .custom-btndanger {
+            background-color: #FFFFFF;
+            border          : 1px solid #e5e5e5;
+        }
+    }
+
+    &.ndt-customize-body {
+        margin    : 0 !important;
+        background: #FFFFFF !important;
+        padding   : 60px 10px 15px 10px !important;
+    }
+
+    .truy-van-lich-su-giao-dich-container {
+        background-color: #FFFFFF !important;
+    }
+
+    .saoke-lsdg-tien-container {
+        background-color: #FFFFFF !important;
+    }
+
+    .sao-ke-ccq-container {
+        background-color: #FFFFFF !important;
+    }
+}

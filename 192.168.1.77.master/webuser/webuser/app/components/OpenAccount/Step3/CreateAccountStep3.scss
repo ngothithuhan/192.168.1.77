@@ -1,0 +1,96 @@
+.create-account-step3 {
+
+    .react-datepicker__input-container {
+        width: 100% !important;
+
+        input {
+            width: 100% !important;
+        }
+    }
+
+    .Select.is-disabled {
+        .Select-control {
+            background-color: #EEEEEE !important;
+        }
+    }
+
+
+    .create-account-step3-content {
+        padding   : 7px;
+        background: white;
+
+        .over-css {
+            padding-left: 0 !important;
+        }
+
+        .img-signature-preview {
+            height          : 100px;
+            width           : 250px;
+            background      : center center no-repeat;
+            background-color: #F3F3F3;
+            background-size : contain;
+        }
+
+        .btn-upload {
+            font-size      : 14px;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            width          : 250px;
+            height         : 40px;
+            color          : white;
+            cursor         : pointer;
+            background     : linear-gradient(180deg, #303C52 0%, #121720 100%);
+
+            i {
+                margin-right: 7px;
+            }
+        }
+
+        .required-text {
+            color: red;
+        }
+
+        //customize select library
+
+        .Select {
+            height: 34px; //== chiều cao input bootstrap để ko vỡ layout
+        }
+
+        input[type="checkbox"] {
+            margin: 0 !important;
+        }
+
+        .title-section {
+            font-size     : 14px;
+            padding-bottom: 5px;
+        }
+
+        .add-space {
+            padding-top: 5px;
+        }
+
+        .custom-group-checkbox {
+            display      : inline-flex;
+            padding      : 0 16px;
+            align-items  : center;
+            margin-bottom: 5px;
+
+            input {
+                cursor: pointer;
+            }
+
+            .text-agree {
+                cursor      : pointer;
+                margin      : 0 !important;
+                padding-left: 10px;
+            }
+        }
+
+
+    }
+}
+
+.popover {
+    max-width: 320px !important;
+}

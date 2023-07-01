@@ -1,0 +1,146 @@
+    .open-account-welcome {
+        background       : url('/images/bg_bank_ssi.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size    : cover;
+    
+        height: calc(100vh - 50px) !important;
+        width : 100%;
+    
+        // height           : calc(100vh - 50px);
+        //margin-top     : 48px;
+        background-size  : cover;
+        font-family      : Arial, Helvetica, sans-serif;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        .container-welcome {
+            width       : 744px;
+            height      : 458px;
+            display     : flex;
+            margin-left : auto;
+            margin-right: auto;
+            line-height : 1.9;
+    
+            .image-welcome {
+                background: url('/images/Welcome.png');
+                width     : 312px;
+                height    : 458px;
+            }
+    
+            .content-welcome {
+                padding         : 0px 32px;
+                width           : 432px;
+                height          : 458px;
+                background-color: #fff;
+                border-radius: 0 5px 5px 0;
+                span.note-text {
+                    color: #3875EB;
+                }
+    
+                .content-welcome-title {
+                    font-weight: 700;
+                    font-size  : 28px;
+                }
+    
+                .content-welcome-text {
+                    font-weight   : 400;
+                    font-size     : 14px;
+                    padding-bottom: 20px;
+    
+                    ol {
+                        padding-left: 20px;
+    
+                        li {
+                            list-style: decimal;
+                        }
+                    }
+    
+                    .recommend-web-browser {
+                        padding-bottom: 10px;
+                    }
+                }
+    
+                .btn-begin {
+                    font-size       : 14px;
+                    background-color: #DF7A00;
+                    padding         : 5px 20px;
+                    color           : #fff;
+                    border          : unset;
+                }
+            }
+        }
+    
+    }
+    
+    @media (max-width: 768px) {
+        .open-account-welcome {
+    
+            .container-welcome {
+                width          : auto;
+                height         : auto;
+                justify-content: center;
+    
+                .image-welcome {
+                    display: none;
+                }
+    
+                .content-welcome {
+                    padding-top: 20px;
+                    width      : 80%;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .open-account-welcome {
+            height: calc(100vh - 50px);
+    
+            .container-welcome {
+                line-height: 1.6;
+    
+                .content-welcome {
+                    padding-top: 40px;
+                    width      : 95%;
+                    height     : auto;
+                    max-height : calc(100vh - 100px);
+                    overflow-y : scroll;
+    
+                    .content-welcome-title {
+                        font-size: 20px;
+                    }
+    
+                    .content-welcome-text {
+                        font-size: 14px;
+    
+                        ol {
+                            font-size: 14px;
+                        }
+    
+                        .recommend-web-browser {
+                            font-size: 14px;
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .open-account-welcome {
+            height: calc(100vh - 50px);
+    
+            .container-welcome {
+                .content-welcome {
+                    padding-top: 5px;
+                    width      : 95%;
+                    height     : auto;
+                    max-height : calc(100vh - 150px);
+                    overflow-y : scroll;
+                }
+            }
+        }
+    }

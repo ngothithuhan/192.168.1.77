@@ -1,0 +1,72 @@
+.custom_modal {
+	display: flex !important;
+	justify-content: center;
+	align-items: flex-start;
+	.modal-dialog {
+		width: 95%;
+		display: flex;
+		justify-content: center;
+		margin-top: 8%;
+		.modal-content {
+			width: 90%;
+		}
+	}
+
+	.modal-content {
+		.ReactTable {
+			.rt-thead.-header {
+				.moreInfo {
+					color: #DF7A00;
+				}
+				.rt-resizable-header-content {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.titleDetail {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0 10px 0;
+	.titleDetail_left {
+		display: flex;
+		flex-direction: row;
+		margin-left: 10px;
+		// margin-top: 10px;
+		span {
+			font-weight: bold;
+		}
+		div {
+			padding: 10px;
+			background-color: #cccccc;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 2px 0 2px;
+		}
+	}
+	.titleDetail_right {
+		padding: 10px;
+		background-color: #cccccc;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		// margin-top: 10px;
+		i {
+			cursor: pointer;
+		}
+	}
+	.titleDetail--info {
+		font-weight: bold;
+	}
+}
+
+.tableDetail {
+	.ReactTable {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}

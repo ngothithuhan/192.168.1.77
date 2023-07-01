@@ -1,0 +1,33 @@
+.btn-future{
+    padding-top: 42px;
+}
+.future-info .col-xs-12 {
+    padding: 0px;
+    margin: 0px 0px -8px 0px;
+}
+.future-info .time-countdown{
+    background: white;
+    padding-left: 0px;
+    margin-left: 4px !important;
+    margin-top: -4px !important;
+    /* padding-right: 0px; */
+    
+    /* width: 100%; */
+}
+.future-info .inner55-title {
+    margin: 0px 0px 17px 0px;
+    font-size: 12px;
+}
+.future-info .time-countdown .col-xs-3 {
+    text-align: center;
+    padding: 0px 1px 0px 1px;
+     /* margin-left: 17px;  */
+}
+
+.future-info .number-time-countdown{
+    font-size: 23px;
+}
+.future-info .inner55-title {
+    margin: 0px 0px 19px 0px;
+    font-size: 14px;
+}

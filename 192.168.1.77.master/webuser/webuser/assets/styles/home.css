@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+.bgHome{
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 8%;
+    background: #ffffff;
+    /* background: url(../images/bgHome_dark4.png) no-repeat center center fixed;
+    background-size: cover; */
+}
+.bgHome2{
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/home.jpg) no-repeat fixed; 
+    /* background-position: right bottom; */
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: 0px 0px; 
+}
+.bgHome3{
+    /* margin-top: 50px!important; */
+    /* position:fixed; */
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bgHome_dark4.png) no-repeat fixed;
+    /* background-position: right bottom; */
+    /* background-size: 100% 100%; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -50px;
+
+
+
+    /* background-image: url(../images/bgHome_dark4.png), url(../images/bgHome_dark4.png);
+    background-position: center left, left top;
+    background-repeat: no-repeat, repeat; */
+}
+.bgHome #account-tool {
+
+    border-bottom: none !important;
+    
+}
+
+.menu-Right{
+    padding: 60px 60px 60px 80px!important;
+}
+
+.mainHome{
+    position:fixed;
+    top: 40%;
+    left: 80%;
+    /* width:50em;
+    height:28em; */
+    margin-top: -14em; /*set to a negative number 1/2 of your height*/
+    margin-left: -25em; /*set to a negative number 1/2 of your width*/
+} 
+
+.wrap-icon {
+    transition: all .5s ease-in-out;
+    display: table;
+    margin: 0 auto;
+    width: 85px;
+    height: 85px;
+    border: 4px solid #fff;
+    background-color: #014A24;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.wrap-icon .icon{
+    transition: all .3s ease-in-out;
+    display: table-cell;
+    font-size: 44px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.itemTitle{
+    transition: all .5s ease-in-out;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.itemleft{
+    float:left;
+    width: 200px;
+}
+.itemright{
+    float:right;
+    width: 200px;
+}
+.itembottom{
+    width:100%;
+    bottom:0;
+    position: absolute;
+}
+.itemtop{
+    width:100%;
+    top:0;
+    position: absolute;
+}
+
+.bgHome a{
+    text-decoration:none;
+}
+
+.homefooter{
+    bottom:0;
+    left:0;
+    width:100%;
+    /* background-color: rgba(255,255,255,.4)!important; */
+    background-color: aliceblue!important;
+    position: fixed;
+    z-index: 1000;
+    opacity: 0.8;
+}
+.homefooter .block1{
+    padding-top:10px;
+    float:left;
+}
+.homefooter .block2{
+    padding-top:10px;
+    float:right;
+}
+.mytime {
+    float:left;
+    margin-left: 28px;
+    padding: 6px;
+    margin-top: 10px;
+}
+.navLeft{
+    float:left;
+}
+.navLeft .navbar-brand {
+   padding: 7px;
+}
+/* .homeheader{
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgba(255,255,255,.4)!important;
+    position: fixed;
+} */
+/* .homeheader .block1{
+    padding:10px;
+    float:left;
+}
+.homeheader .block2{
+    padding:10px;
+    float:right;
+} */
+.divMenu{
+    margin-bottom: 10px;
+}
+.mainBanTinLeft{
+    position:fixed;
+    top: 80%;
+    left: 30%;
+    /* width:50em;
+    height:28em; */
+    margin-top: -14em; /*set to a negative number 1/2 of your height*/
+    margin-left: -25em; /*set to a negative number 1/2 of your width*/
+}
+.mainBanTinRight{
+    position:fixed;
+    top: 80%;
+    left: 80%;
+    /* width:50em;
+    height:28em; */
+    margin-top: -14em; /*set to a negative number 1/2 of your height*/
+    margin-left: -25em; /*set to a negative number 1/2 of your width*/
+}
+.divTruyVanSoDu{
+}

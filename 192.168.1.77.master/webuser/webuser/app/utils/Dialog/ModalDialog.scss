@@ -1,0 +1,97 @@
+.modal-action {
+	.title-content {
+		display: flex;
+		justify-content: space-between;
+		background-color: #DF7A00;
+		border-radius: 5px 5px 0 0;
+		align-items: center;
+		.close {
+			width: 20px;
+		}
+	}
+	.icon-container {
+		display: flex;
+		justify-content: center;
+		margin: 10px 0;
+		.icon-bg {
+			padding: 18px;
+			background-color: #f3f3f3;
+			border-radius: 50%;
+			i {
+				color: #df7a00;
+				font-size: 20px;
+			}
+		}
+	}
+	
+	.modal-middle {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		width: 80%;
+		span {
+			text-align: center;
+			font-size: 15px;
+			font-weight: 500;
+		}
+	}
+	
+	.modal-bottom {
+		margin: 10px 0;
+		display: flex;
+		justify-content: center;
+		button {
+			float: right;
+			margin-left: 5px;
+			margin-right: 5px;
+			width: 70px;
+		}
+		.sayYes {
+			background-color: #df7a00;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			outline: none;
+			&:hover {
+				opacity: 0.8;
+			}
+			&:active {
+				opacity: 0.9;
+			}
+		}
+		.sayNo {
+			border-color: #df7a00;
+			outline: none;
+			color: #df7a00;
+			border-width: thin;
+			&:hover {
+				color: #fff;
+				background-color: #DF7A00;
+			}
+			&:active {
+				opacity: 0.9;
+			}
+		}
+	}
+
+	.div-add-order-image {
+        position: relative;
+        .icon-added-order-image {
+            color: #00C087;
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            i {
+                font-size: 16px;
+            }
+        }
+        #btnOrderImg {
+            margin-top: 10px;
+            margin-bottom: -10px;
+            border: none;
+            box-shadow: none;
+            text-decoration: underline;
+            color: rgb(0, 118, 163);
+        }
+    }
+}

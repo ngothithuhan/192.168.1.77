@@ -1,0 +1,44 @@
+.ad-acc-overview-container {
+    .ad-acc-overview-header {
+        .title-acc-overview {
+            padding    : 10px;
+            font-size  : 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+
+        .combo-input {
+            padding: 5px;
+
+            .ad-acc-search {
+                border       : 1px solid #ddd;
+                padding      : 5px;
+                border-radius: 3px;
+                width        : 100%;
+            }
+
+            .btn-acc-search {
+                padding         : 5px 12px;
+                background-color: #DF7A00;
+                color           : white;
+                outline         : unset;
+                border          : none;
+                border-radius   : 4px;
+            }
+        }
+
+    }
+
+    .ad-acc-overview-body {
+        padding: 10px;
+
+        .ReactTable {
+            //reset custom css react table
+            margin-left : 0 !important;
+            margin-right: 0 !important;
+
+        }
+
+        .table-acc-overview-container {}
+    }
+}

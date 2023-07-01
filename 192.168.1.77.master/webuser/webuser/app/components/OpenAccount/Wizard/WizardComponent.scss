@@ -1,0 +1,250 @@
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+
+.account-register-container {
+  .flow-create-acc {
+    .wizard {
+      margin: 10px 0;
+
+      .col {
+        width: 25% !important;
+      }
+
+      .step {
+        position: relative;
+
+        &:before {
+          border-color: grey;
+          background  : grey;
+          color       : white;
+        }
+
+        &:after {
+          border-color: grey;
+          background  : grey;
+          color       : white;
+        }
+
+        .step-icon {
+          border-color: grey;
+          background  : grey;
+          color       : white;
+
+          font-size    : 22px;
+          height       : 36px;
+          line-height  : 36px;
+          margin       : 0 auto 5px auto;
+          text-align   : center;
+          width        : 36px;
+          border-radius: 50%;
+
+          @media (max-width: 767px) {
+            height     : 25px;
+            line-height: 25px;
+            width      : 25px;
+          }
+        }
+      }
+
+      .step-first {
+
+        // @media (max-width: 767px) {
+        //   width: auto;
+        // }
+
+        // width: 100px;
+
+        &:after {
+          content : "";
+          height  : 4px;
+          position: absolute;
+          right   : 0;
+          top     : 15px;
+          @include calc("width", "50% - 18px");
+
+          @media (max-width: 767px) {
+            @include calc("width", "50% - 13px");
+            top: 10px !important;
+          }
+
+          @media (max-width: 320px) {
+            @include calc("width", "50% - 12px");
+            top: 10px !important;
+          }
+        }
+
+        &.active {
+          .step-legend {
+            color: #212121;
+          }
+
+          .step-icon {
+            background: #FF7802;
+          }
+
+          .step-legend {
+            color: #212121;
+          }
+        }
+
+        &.actived {
+          .step-legend {
+            color: #212121;
+          }
+
+          .step-icon {
+            background: #FF7802;
+          }
+
+          &:after {
+
+            background: #FF7802;
+
+          }
+        }
+      }
+
+      .step-middle {
+        color: #212121;
+
+        &:before {
+          content : "";
+          height  : 4px;
+          left    : 0;
+          position: absolute;
+          top     : 15px;
+          @include calc("width", "50% - 18px");
+
+          @media (max-width: 767px) {
+            @include calc("width", "50% - 13px");
+            top: 10px !important;
+          }
+
+          @media (max-width: 320px) {
+            @include calc("width", "50% - 12px");
+            top: 10px !important;
+          }
+        }
+
+        &:after {
+          content : "";
+          height  : 4px;
+          position: absolute;
+          right   : 0;
+          top     : 15px;
+          @include calc("width", "50% - 18px");
+
+          @media (max-width: 767px) {
+            @include calc("width", "50% - 13px");
+            top: 10px !important;
+          }
+
+          @media (max-width: 320px) {
+            @include calc("width", "50% - 12px");
+            top: 10px !important;
+          }
+        }
+      }
+
+      .step-last {
+        // width: 100px;
+        color: #212121;
+
+        &:before {
+          content : "";
+          height  : 4px;
+          left    : 0;
+          position: absolute;
+          top     : 15px;
+          @include calc("width", "50% - 18px");
+
+          @media (max-width: 767px) {
+            @include calc("width", "50% - 13px");
+            top: 10px !important;
+          }
+
+          @media (max-width: 320px) {
+            @include calc("width", "50% - 12px");
+            top: 10px !important;
+          }
+        }
+
+        &.active {
+          .step-icon {
+            background: #FF7802;
+          }
+
+          .step-legend {
+            color: #212121;
+          }
+
+          &:before {
+
+            background: #FF7802;
+
+          }
+        }
+      }
+
+      .active {
+        cursor: pointer;
+
+        .step-legend {
+          color: #212121;
+        }
+
+        .step-icon {
+
+          background: #FF7802;
+
+        }
+
+        &:before {
+
+          background: #FF7802;
+
+        }
+      }
+
+      .actived {
+        cursor: pointer;
+
+        &:before {
+
+          background: #FF7802;
+
+        }
+
+        &:after {
+
+          background: #FF7802;
+
+        }
+
+        .step-icon {
+
+          background: #FF7802;
+
+        }
+
+        .step-legend {
+          color: #212121;
+        }
+      }
+
+      .step-legend {
+        @media (max-width: 767px) {
+          font-size: 10px;
+        }
+
+        font-size : 14px;
+        text-align: center;
+      }
+    }
+  }
+
+}

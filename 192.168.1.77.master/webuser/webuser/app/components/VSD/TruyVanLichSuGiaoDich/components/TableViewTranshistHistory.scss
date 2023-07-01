@@ -1,0 +1,85 @@
+.view-trans-history {
+    .ReactTable {
+        .custom-header-react-table {
+            font-weight: 600 !important;
+        }
+    }
+
+
+}
+
+.block-search {
+    .inputs-table {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: flex-end;
+        margin-right   : 20px;
+
+        .cus-input-date {
+            width       : 170px;
+            display     : flex;
+            align-items : center;
+            margin-right: 15px;
+
+            input {
+                cursor         : pointer;
+                border-radius  : unset;
+                padding-left   : 5px !important;
+                //background   : #DEE1E7;
+                border         : 1px solid #E4E4E4;
+                color          : black !important;
+            }
+
+            i {
+                position : relative;
+                right    : 20px;
+                font-size: 15px;
+            }
+
+            ::-webkit-input-placeholder {
+                /* Edge */
+                color: #E5E5E5;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #E5E5E5;
+            }
+
+            ::placeholder {
+                color: #E5E5E5;
+            }
+        }
+
+        .btn-search-tvlsgd {
+            border          : none;
+            outline         : none;
+            cursor          : pointer;
+            height          : 34px;
+            width           : 85px;
+            color           : white;
+            background-color: #DF7A00;
+            font-size       : 14px;
+            border-radius   : 4px;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .div-select-dbcode {
+            margin-right: 15px;
+
+            .Select-control,
+            .Select-input {
+                height: 32px;
+            }
+
+            .Select-placeholder,
+            .Select--single>.Select-control .Select-value {
+                line-height: 32px;
+            }
+        }
+    }
+}

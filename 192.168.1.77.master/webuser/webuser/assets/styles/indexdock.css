@@ -1,0 +1,61 @@
+.indexdock{
+    top:114px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 120;
+}
+.indexdock p {
+    margin-top: 5px;
+    text-shadow: 1px 1px 1px #d9edf7;
+}
+.indexdock span{
+    font-size: 13px;
+    line-height: 26px;
+    padding-right: 4px;
+} 
+.indexdock .noteNAV p {
+    float: left;
+    margin-left: 5%;
+    margin-top: -10px;
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+}
+.noteNAV {
+    height: 1px;
+}
+@media only screen and (max-width: 768px) {
+    .indexdock {
+      position: relative;
+      top: 90;
+    } 
+  }
+  /* @media only screen and (min-width: 768px) {
+    .indexdock {
+      top: 146;
+    }
+  } */
+ /* Make it a marquee */
+.marquee {
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 70s linear infinite;
+}
+.indexitem {
+    float: left
+}
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+
+/* Make it pretty */

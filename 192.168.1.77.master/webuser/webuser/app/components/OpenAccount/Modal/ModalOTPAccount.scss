@@ -1,0 +1,45 @@
+.modal-otp-account {
+    .add-pb-10 {
+        padding-bottom: 10px;
+    }
+
+    .add-pt-10 {
+        padding-top: 10px;
+    }
+
+    .add-py-10 {
+        padding: 10px 0;
+    }
+
+    .btn-submit-otp {
+        width           : 100%;
+        padding         : 12px 0;
+        border          : none;
+        color           : white;
+        background-color: #DF7A00;
+        cursor          : pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .timer-container {
+        .count-down-container {
+            padding-top: 10px;
+        }
+
+        .base-timer {
+            height: 35px !important;
+            width : 35px !important;
+
+
+        }
+
+        .base-timer__label {
+            height   : 35px !important;
+            width    : 35px !important;
+            font-size: 11px;
+        }
+    }
+}

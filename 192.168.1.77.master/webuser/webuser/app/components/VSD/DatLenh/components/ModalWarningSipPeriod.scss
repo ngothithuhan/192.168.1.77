@@ -1,0 +1,78 @@
+.modal-warning-sip-period-container {
+    .modal-waring-sip-title {
+        height          : 48px;
+        display         : flex;
+        align-items     : center;
+        color           : white;
+        background-color: #F20000;
+
+        .mws-text {
+            width       : calc(100% - 40px);
+            padding-left: 16px;
+
+            i {
+                width    : 28px;
+                font-size: 17px;
+            }
+
+            span {
+                font-size  : 20px;
+                font-weight: 700;
+            }
+        }
+
+        .mws-close {
+            width     : 40px;
+            text-align: center;
+
+            i {
+                font-size: 16px;
+                cursor   : pointer;
+            }
+        }
+    }
+
+    .modal-warning-sip-body {
+        height : 200px;
+        padding: 16px;
+
+        p {
+            font-size : 14px;
+            text-align: justify;
+        }
+    }
+
+    .modal-warning-sip-footer {
+        padding: 0 16px 16px 16px;
+
+        button {
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .btn-sip-accept {
+            height    : 40px;
+            outline   : none;
+            background: #F20000;
+            color     : white;
+            float     : right;
+            width     : 85px;
+            border    : none;
+        }
+
+        .btn-sip-not-accept {
+
+            height          : 40px;
+            width           : 105px;
+            background-color: transparent;
+            outline         : none;
+            color           : #F20000;
+            border          : 1px solid #F20000;
+
+        }
+    }
+
+}

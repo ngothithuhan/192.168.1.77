@@ -1,0 +1,25 @@
+.canbo-xacnhan-otp-container {
+    .btn-submit-otp {
+        width           : 100%;
+        background-color: #DF7A00;
+        color           : white;
+        font-size       : 14px;
+        font-weight     : 600;
+        height          : 44px;
+        margin          : 5px 0;
+    }
+
+    .timer-container {
+        display    : flex;
+        align-items: center;
+
+        .count-down-container {
+            // font-size   : 16px;
+            padding-left: 10px;
+        }
+
+        span {
+            padding-left: 3px;
+        }
+    }
+}

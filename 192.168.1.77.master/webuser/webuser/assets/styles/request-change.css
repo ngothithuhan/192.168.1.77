@@ -1,0 +1,105 @@
+ .row-data{
+    padding-top: 12px;
+
+}
+.row-data .form-control{
+    height: 29px ;
+    font-size: 12px
+}
+
+ .module{
+    border: 1px solid #e0d5d5;
+    padding: 7px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+.module .title-module{
+    font-size: 14px;
+    font-weight: bold;
+}
+ .title-module-table{
+    background: #dcdfe2;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-left: -7px;
+}
+
+.request-change .btn{
+    font-size: 13px;
+}
+.request-change table td .btn{
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+
+.request-change .Select-value{
+
+
+    width: 100% !important;
+    font-size: 12px !important;
+    line-height: 23px !important;
+    margin-left: 1px !important;
+    margin-top: -2px !important;
+  }
+  .request-change .Select-control{
+      display: inline-block !important;
+      height: 28px;
+  }
+  .request-change .Select-placeholder,   .request-change .Select--single > .Select-control .Select-value{
+      line-height: 28px !important;
+      font-size: 12px !important;
+  }
+
+  .request-change h5 {
+      width: 12%;
+      float: left
+  }
+  .type-transfer .form-control {
+      height: 28px;
+      font-size: 12px;
+      padding: 3px 9px ;
+  }
+  #items{
+  list-style:none;
+  margin:0px;
+  margin-top:4px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:3px;
+  font-size:17px;
+  color: #333333;
+
+}
+hr { width: 85%;
+  background-color:#E4E4E4;
+  border-color:#E4E4E4;
+    color:#E4E4E4;
+}
+#cntnr{
+  display:none;
+  position:fixed;
+  border:1px solid #B2B2B2;
+  width:150px;      background:#F9F9F9;
+  box-shadow: 3px 3px 2px #E9E9E9;
+  border-radius:4px;
+}
+
+li{
+
+  padding: 3px;
+  padding-left:10px;
+}
+
+
+#items :hover{
+  background:#e7e7e7;
+  border-radius:2px;
+  text-decoration: none;
+}

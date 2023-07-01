@@ -1,0 +1,232 @@
+.dau-tu-dinh-ki-customize-body {
+    margin    : 0 !important;
+    background: #E5E5E5;
+    padding   : 55px 7px 10px 7px !important;
+}
+
+#main_body.admin.container {
+    .custom-new-dau-tu-dinh-ki-right {
+        #tab1 {
+            .customize-react-table {
+                .ReactTable {
+                    max-height: 340px;
+                }
+            }
+        }
+    }
+}
+
+#main_body.customer.container.dau-tu-dinh-ki-customize-body {
+    .custom-new-dau-tu-dinh-ki-right {
+        .so-lenh-dau-tu-dinh-ki {
+            .ReactTable {
+                max-height: 400px;
+            }
+        }
+    }
+}
+
+.custom-new-dau-tu-dinh-ki {
+    display: flex;
+
+
+    .custom-new-dau-tu-dinh-ki-left {
+        width           : 25%;
+        margin          : 5px;
+        padding         : 10px 0;
+        background-color: white;
+
+        .Select-control {
+            background-color: #fff;
+
+            input {
+                background-color: unset;
+            }
+        }
+
+        input:not([disabled]),
+        select:not([disabled]),
+        .Select-placeholder:not([disabled]),
+        .inputEdit:not([disabled]) {
+            background-color: #fff;
+        }
+
+        .noteSRTPEns {
+            margin-top      : 5px;
+            padding         : 5px;
+            border          : 1px solid #DF7A00;
+            background-color: rgba(223, 122, 0, 0.1);
+            color           : rgba(0, 0, 0, 0.5);
+            text-align      : justify;
+        }
+
+        .new-btnBuySell {
+            width         : 100%;
+            text-transform: uppercase;
+            height        : 44px;
+            font-size     : 14px;
+            font-weight   : 700;
+            margin-top    : 16px;
+            color         : white;
+        }
+
+        .title-new-place-order {
+            display      : flex;
+            justify-content: space-between;
+            padding      : 0 15px;
+            align-items  : center;
+            margin-bottom: 10px;
+
+            label {
+                font-weight: 600;
+                font-size  : 16px;
+            }
+
+            button {
+                height          : 30px;
+                width           : 30px;
+                background-color: #fff;
+                border          : 1px solid #E5E5E5;
+                border-radius   : 5px;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .no-padding {
+                padding: 0 !important;
+            }
+
+            .no-padding-right {
+                padding-right: 0 !important;
+            }
+        }
+    }
+
+    .custom-new-dau-tu-dinh-ki-right {
+        background-color: white;
+        margin          : 5px;
+        width           : 75%;
+
+        .table-compare-order-container,
+        .table-sip-sell-list-container {
+            .table-compare-order-btn-container {
+                display    : flex;
+                align-items: center;
+
+                .table-compare-order-btn-cancel {
+                    width       : 35px;
+                    height      : 25px;
+                    display     : inline-block;
+                    background  : transparent;
+                    color       : #C60C30;
+                    border      : 1px solid #C60C30;
+                    margin-right: 5px;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+                .table-compare-order-btn-edit {
+                    width  : 35px;
+                    height : 25px;
+                    display: inline-block;
+                    color  : #DF7A00;
+                    border : 1px solid #DF7A00;
+                    color  : #DF7A00;
+
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+                .table-compare-order-btn-detail {
+                    width      : 60px;
+                    height     : 25px;
+                    display    : inline-block;
+                    background : #DF7A00;
+                    color      : white;
+                    border     : none;
+                    outline    : none;
+                    margin-left: 5px;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+
+        }
+
+        .add-spaces {
+            height          : 10px;
+            width           : 100%;
+            background-color: #E5E5E5;
+        }
+
+        .dtdk-all-tables {
+            margin-top: 15px;
+
+            .tab-child {
+                font-size  : 18px;
+                padding    : 10px;
+                font-weight: 400;
+                cursor     : pointer;
+
+                &.tab-active {
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+
+    .div-add-order-image {
+        position: relative;
+
+        .icon-added-order-image {
+            color   : #00C087;
+            position: absolute;
+            top     : 20px;
+            right   : 25px;
+
+            i {
+                font-size: 16px;
+            }
+        }
+
+        #btnOrderImg {
+            margin-top   : 10px;
+            margin-bottom: -10px;
+            box-shadow   : none;
+            color        : #000000
+        }
+    }
+
+    .div-sell-qtty {
+        position: relative;
+
+        .div-sell-all-btn {
+            position: absolute;
+            bottom  : 0px;
+            right   : 15px;
+
+            button {
+                border       : 1px solid #ccc;
+                background   : transparent;
+                border-radius: 4px;
+                height       : 34px;
+                padding      : 5px 10px;
+            }
+
+            i {
+                color        : #00C087;
+                font-size    : 16px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

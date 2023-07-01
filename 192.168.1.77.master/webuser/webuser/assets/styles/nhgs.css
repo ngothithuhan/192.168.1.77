@@ -1,0 +1,236 @@
+.title-main-nhgs {
+  text-align : center;
+  padding-top: 20px;
+  font-size  : 17px;
+
+}
+
+.myfooter {
+  color              : white;
+  /* height          : 100%;     */
+  /* background-color: #242729;  */
+  background-color   : rgba(226, 33, 39, 1);
+  padding-top        : 10px;
+  font-size          : 12px;
+  /* padding-bottom  : 18px; */
+  /* position        : fixed; */
+  height             : 60px;
+  bottom             : 0;
+  width              : 100%;
+  z-index            : 998;
+}
+
+.myfooter a {
+  color          : white;
+  text-decoration: none;
+  transition     : 0.3s;
+}
+
+.myfooter a:hover {
+  cursor: pointer;
+  color : red;
+}
+
+.footer {
+  padding-top: 24px;
+  color      : white;
+  /* padding : 9px; */
+  bottom     : 0px;
+
+  height       : 66px;
+  /* color     : #333;
+  font-weight  : bold; */
+  font-size    : 14px;
+  background   : white;
+  /* background: url(../../images/bg_footer.png) repeat-x; */
+  border       : 1px solid #bfb5b5;
+}
+
+/* .dautu-dinhki .inner55-mua.col-xs-12{
+  height: 28px !important ;
+  color :green
+} */
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.dieuchinhnoptien .label {
+  font-weight: normal !important;
+}
+
+.dieuchinhnoptien #dcnt {
+  margin-top: 30px !important;
+}
+
+dieuchinhnoptien #dcnt>form {
+  margin-bottom: 30px !important;
+}
+
+#timkiem {
+  margin-left : 50px;
+  margin-right: 17px;
+}
+
+.dieuchinhnoptien table>tbody>tr>td:nth-child(1) {
+  text-align: center;
+}
+
+.dieuchinhnoptien table>tbody>tr>td>button {
+  margin-left: 10px;
+}
+
+.dieuchinhnoptien table>thead>tr>th>button {
+  margin-right: 10px;
+}
+
+.dieuchinhnoptien #kqkdkdcnt {
+  margin-top: 30px !important;
+}
+
+.dieuchinhnoptien #kqkdkdcnt>form {
+  /* margin-bottom: 30px !important; */
+}
+
+.dieuchinhnoptien .ketquanoptien {
+  margin-top: 50px !important;
+}
+
+.dieuchinhnoptien {
+  font-size: 14px;
+}
+
+.dieuchinhnoptien input[type="checkbox"] {
+  margin: 0px 0%;
+}
+
+.dieuchinhnoptien .form-group {
+  padding-left: 20px;
+}
+
+.dieuchinhnoptien .form-group label {
+  padding-right: 10px;
+}
+
+.table-ccq .btn {
+  font-size: 12px !important;
+  margin   : 0px !important;
+}
+
+.info-ccq {
+  font-size: 14px;
+}
+
+.info-ccq .table-sodu th {
+  padding-bottom: 0px;
+  padding-top   : 0px;
+}
+
+.info-ccq .table-sodu tbody td {
+  padding   : 3px;
+  text-align: center;
+}
+
+
+.comparecmd {
+  font-size: 14p !important;
+}
+
+.comparecmd .form-search {
+  font-size: 14px;
+}
+
+.comparecmd .form-search label {
+  padding-right: 8px;
+  font-weight  : bold;
+}
+
+.comparecmd .th-item {
+  font-size: 12px;
+}
+
+.comparecmd tbody td {
+  font-size: 13px;
+  padding  : 5px;
+}
+
+.react-date-picker__calendar {
+  z-index: 999;
+}
+
+.modal-naptien h5 {
+  font-size: 14px;
+}
+
+.main-broad {
+  background: #cdeaf1;
+  padding   : 10px;
+  margin-top: 10px;
+}
+
+.head {
+  background : #e7e7e7 !important;
+  color      : #000000 !important;
+  font-weight: bold;
+}
+
+.modal-acess .ReactTable .rt-tbody .rt-td {
+  text-align  : center;
+  /* font-size: 12px; */
+  line-height : 35px;
+}
+
+.modal-acess .ReactTable .rt-thead .rt-th,
+.modal-acess .ReactTable .rt-thead .rt-td {
+  line-height: 31px;
+}
+
+.modal-acess .btn {
+  padding  : 4px 12px;
+  font-size: 12px;
+}
+
+.manager-open .ReactTable .rt-thead .head .rt-th {
+  line-height: 32px !important;
+}
+
+.manager-open .ReactTable .rt-tbody .rt-td .checkbox-inline input[type="checkbox"] {
+  margin-top: -7px;
+}
+
+/* .ReactTable .rt-thead .rt-tr {
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: bold;
+} */
+.create-account .ReactTable .rt-th,
+.ReactTable .rt-td {
+  cursor: pointer;
+}
+
+.create-account .ReactTable .rt-tbody .rt-td .checkbox-inline input[type="checkbox"] {
+  margin-top: -7px;
+}
+
+.content-left .ReactTable .rt-tbody .rt-td {
+  text-align : center;
+  font-size  : 12px;
+  line-height: 25px;
+}
+
+.content-left .ReactTable .rt-resizable-header-content {
+  font-size  : 12px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.tile-main-broad {
+  font-size     : 14px;
+  padding-bottom: 10px;
+  margin-left   : -7px;
+}
+
+.disable {
+  pointer-events: none;
+  opacity       : 0.7;
+}

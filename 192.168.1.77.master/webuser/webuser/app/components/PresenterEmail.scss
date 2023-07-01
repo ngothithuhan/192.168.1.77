@@ -1,0 +1,77 @@
+.Presenter {
+	// margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	.modal-Presenter {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 20%;
+		height: 40%;
+		background-color: #fff;
+		div {
+			padding: 0 15px;
+			margin: 5px 0;
+		}
+		.modal-title {
+			span {
+				font-size: 33px;
+				font-weight: bold;
+			}
+		}
+		.modal-question {
+			span {
+				font-size: 15px;
+				font-weight: bold;
+				display: block;
+			}
+			.thereAns {
+				padding: 0;
+				.awn2 {
+					margin-right: 0;  
+					margin-left: 15px;
+				}
+			}
+		}
+		.modal-button {
+			display: flex;
+			flex-direction: column;
+			button {
+				width: 100%;
+			}
+			.foward {
+				outline: none;
+					border: none;
+					height: 40px;
+					background: #DF7A00;
+					color: #fff;
+					font-size: 15px;
+					margin-bottom: 10px;
+				&:hover {
+					opacity: 0.8;
+				}
+				&:active {
+					opacity: 0.9;
+				}
+			}
+			.turnBack {
+				outline: none;
+				border: none;
+				height: 40px;
+				background: #DEE1E7;
+				color: #000;
+				font-size: 15px;
+				margin-bottom: 10px;
+				&:hover {
+					opacity: 0.8;
+				}
+				&:active {
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+}

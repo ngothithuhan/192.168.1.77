@@ -1,0 +1,740 @@
+.tree {
+  height          : 262px;
+  overflow        : auto;
+  background-color: #fbfbfb;
+  border          : 1px solid #999;
+  border-radius   : 4px;
+  box-shadow      : inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+
+.tree li {
+  list-style-type: none;
+  margin         : 0;
+  padding        : 10px 5px 0 5px;
+  position       : relative
+}
+
+.tree li::before,
+.tree li::after {
+  content : '';
+  left    : -20px;
+  position: absolute;
+  right   : auto
+}
+
+.tree li::before {
+  border-left: 1px solid #999;
+  bottom     : 50px;
+  height     : 99%;
+  top        : -4px;
+  width      : 1px
+}
+
+.tree li::after {
+  border-top: 1px dotted #999;
+  height    : 20px;
+  top       : 25px;
+  width     : 25px
+}
+
+.tree li span {
+  -moz-border-radius   : 5px;
+  -webkit-border-radius: 5px;
+
+  border-radius  : 5px;
+  display        : inline-block;
+  padding        : 3px 8px;
+  text-decoration: none
+}
+
+.tree li.parent_li>span {
+  cursor: pointer
+}
+
+.tree>ul>li::before,
+.tree>ul>li::after {
+  border: 0
+}
+
+.tree li:last-child::before {
+  height: 30px
+}
+
+.tree li.parent_li>span:hover,
+.tree li.parent_li>span:hover+ul li span {
+  background: #ed1c24;
+  color     : #ffffff;
+
+}
+
+.last-child:hover {
+  background: #ed1c24;
+  color     : #ffffff;
+  cursor    : pointer;
+}
+
+
+
+
+/* Define how each icon button should look like */
+.button_notification {
+  color    : black;
+  display  : inline-block;
+  /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+  position : relative;
+  /* All 'absolute'ly positioned elements are relative to this one */
+  padding  : 2px 5px;
+  /* Add some padding so it looks nice */
+  font-size: 25px;
+  cursor   : pointer;
+}
+
+/* Make the badge float in the top right corner of the button */
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius   : 2px;
+  color           : white;
+
+  padding  : 1px 3px;
+  font-size: 10px;
+
+  position: absolute;
+  /* Position the badge within the relatively positioned button */
+  top     : 0;
+  right   : 0;
+}
+
+/* chinh css select */
+.customSelect .Select-control,
+.customSelect .Select-value {
+  height: 28px !important;
+}
+
+.customSelect .Select-input {
+  height: 20px !important;
+}
+
+.customSelect .Select-value {
+  top: -3px !important;
+}
+
+.customSelect .Select-placeholder {
+  line-height: 28px !important;
+}
+
+.customSelect .Select-input>input {
+  padding-top: 5px !important;
+}
+
+/* chinh css select */
+.customSelect2 .Select-control,
+.customSelect2 .Select-value {
+  height: 34px !important;
+}
+
+.customSelect2 .Select-input {
+  height: 20px !important;
+}
+
+.customSelect2 .Select-value {
+  top: 0px !important;
+}
+
+.customSelect2 .Select-placeholder {
+  line-height: 28px !important;
+  padding-top: 2px !important;
+}
+
+.customSelect2 .Select-input>input {
+  padding-top: 5px !important;
+}
+
+.btn-pos-fix_1 {
+  position  : fixed !important;
+  z-index   : 1000 !important;
+  width     : inherit !important;
+  /* display: contents!important; */
+
+}
+
+.btn-pos-fix_1>.Select-menu-outer {
+  z-index    : 1001 !important;
+  /* width   : 100%!important; */
+  /* display : contents!important; */
+  /* position: static!important; */
+}
+
+.btn-pos-fix_2 {
+  position  : fixed !important;
+  z-index   : 998 !important;
+  width     : inherit !important;
+  /* display: contents!important; */
+
+}
+
+.btn-pos-fix_2>.Select-menu-outer {
+  z-index    : 999 !important;
+  /* width   : 100%!important; */
+  /* display : contents!important; */
+  /* position: static!important; */
+}
+
+.internalaccount .form-control {
+  width: 200px !important;
+}
+
+.btn-with-200 {
+  width: 200px !important;
+}
+
+.internalaccount .col-md-9 .form-control {
+  width: 100% !important;
+}
+
+.parts-selector {
+  margin-top   : 32px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .parts-selector {
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : row;
+    flex-direction       : row;
+  }
+}
+
+.parts-selector .list {
+  border                 : solid 2px #dfdfdf;
+  -webkit-box-flex       : 1;
+  -ms-flex-positive      : 1;
+  flex-grow              : 1;
+  background-color       : #fff;
+  border-radius          : 3px;
+  -ms-flex-preferred-size: 0;
+  flex-basis             : 0;
+  min-height             : 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .parts-selector .list {
+    max-height: 90vh;
+  }
+}
+
+.parts-selector .list .list-heading {
+  font-size    : 1em;
+  margin       : 0;
+  padding      : 8px 16px;
+  border-bottom: solid 2px rgba(223, 223, 223, 0.5);
+  color        : rgba(0, 0, 0, 0.8);
+}
+
+.parts-selector .list ul {
+  padding: 0;
+  margin : 0;
+}
+
+.parts-selector .list .message,
+.parts-selector .list .alert {
+  display  : block;
+  font-size: 0.8em;
+  padding  : 4px 16px;
+}
+
+.parts-selector .list .alert.info {
+  background-color: #2196f3;
+  color           : #fff;
+}
+
+.parts-selector .list .alert.error {
+  background-color: #2196f3;
+  color           : #fff;
+}
+
+.parts-selector .list li {
+  display      : block;
+  border-bottom: solid 1px rgba(223, 223, 223, 0.5);
+  padding      : 8px 16px;
+  position     : relative;
+  color        : rgba(0, 0, 0, 0.7);
+}
+
+.parts-selector .list li.selected a,
+.parts-selector .list li.just.moved a {
+  color          : inherit;
+  text-decoration: underline;
+}
+
+.parts-selector .list li.selected {
+  background-color: #2196f3;
+  color           : #fff;
+}
+
+.parts-selector .list li.selected .item-button .icon:before,
+.parts-selector .list li.selected .item-button .icon:after,
+.parts-selector .list li.selected .item-button:hover .icon:before,
+.parts-selector .list li.selected .item-button:hover .icon:after {
+  background-color: #fff;
+}
+
+.parts-selector .list li.moved {
+  -webkit-transition: all .75s;
+  transition        : all .75s;
+}
+
+.parts-selector .list li.moved .message {
+  background-color: #2196f3;
+  color           : #fff;
+  margin-left     : -16px;
+  margin-right    : -16px;
+  position        : relative;
+  bottom          : -8px;
+}
+
+.parts-selector .list li.moved.just {
+  background-color: rgba(33, 150, 243, 0.1);
+}
+
+.parts-selector .list li.moved.just .item-button .icon {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.parts-selector .list li .item-button {
+  display: block;
+}
+
+.parts-selector .list li .item-button .icon {
+  display      : block;
+  width        : 20px;
+  height       : 20px;
+  position     : absolute;
+  top          : 50%;
+  right        : 8px;
+  margin-top   : -10px;
+  border-radius: 50%;
+}
+
+.parts-selector .list li .item-button .icon:before,
+.parts-selector .list li .item-button .icon:after {
+  content         : '';
+  display         : block;
+  position        : absolute;
+  width           : 11px;
+  height          : 3px;
+  background-color: #dfdfdf;
+  top             : 9px;
+  left            : 5px;
+}
+
+.parts-selector .list li .item-button .icon:after {
+  width : 3px;
+  height: 11px;
+  top   : 5px;
+  left  : 9px;
+}
+
+.parts-selector .list li .item-button .text {
+  display : block;
+  width   : 0;
+  height  : 0;
+  overflow: hidden;
+}
+
+.parts-selector .list li .item-button.remove .icon:after {
+  display: none;
+}
+
+.parts-selector .list li .item-button:hover .icon:before,
+.parts-selector .list li .item-button:hover .icon:after {
+  background-color: #2196f3;
+}
+
+.parts-selector .controls {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .parts-selector .controls {
+    -webkit-box-flex     : 0;
+    -ms-flex-positive    : 0;
+    flex-grow            : 0;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    -ms-flex-item-align  : center;
+    align-self           : center;
+  }
+}
+
+.parts-selector .controls .moveto {
+  margin         : 4px 16px;
+  text-decoration: none;
+  position       : relative;
+  display        : inline-block;
+}
+
+.parts-selector .controls .moveto .icon {
+  display    : block;
+  position   : relative;
+  width      : 2em;
+  height     : 2em;
+  line-height: 2em;
+  text-align : center;
+}
+
+.parts-selector .controls .moveto .icon:before,
+.parts-selector .controls .moveto .icon:after {
+  content           : '';
+  height            : 1em;
+  width             : 0.2em;
+  background-color  : #dfdfdf;
+  position          : absolute;
+  top               : 50%;
+  margin-top        : -0.5em;
+  -webkit-transition: background-color .7s;
+  transition        : background-color .7s;
+}
+
+.parts-selector .controls .moveto .icon:before {
+  left             : 0.6em;
+  -webkit-transform: rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+.parts-selector .controls .moveto .icon:after {
+  right            : 0.6em;
+  -webkit-transform: rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.parts-selector .controls .moveto.selected .icon:before {
+  left             : 0.6em;
+  -webkit-transform: rotate(135deg);
+  transform        : rotate(135deg);
+}
+
+.parts-selector .controls .moveto.selected .icon:after {
+  right            : 0.6em;
+  -webkit-transform: rotate(-135deg);
+  transform        : rotate(-135deg);
+}
+
+@media screen and (min-width: 768px) {
+  .parts-selector .controls .moveto {
+    -webkit-transform: rotate(-90deg);
+    transform        : rotate(-90deg);
+  }
+}
+
+.parts-selector .controls .moveto .text {
+  display : block;
+  width   : 0;
+  height  : 0;
+  overflow: hidden;
+}
+
+.parts-selector.parts-selected .controls .moveto.selected {
+  cursor: pointer;
+}
+
+.parts-selector.parts-selected .controls .moveto.selected .icon:before,
+.parts-selector.parts-selected .controls .moveto.selected .icon:after {
+  background-color: #c6c5c5;
+}
+
+.parts-selector.selected-selected .controls .moveto.parts {
+  cursor: pointer;
+}
+
+.parts-selector.selected-selected .controls .moveto.parts .icon:before,
+.parts-selector.selected-selected .controls .moveto.parts .icon:after {
+  background-color: #c6c5c5;
+}
+
+/* css 2 mui ten*/
+.parts-selector .controls .movetoALL {
+  margin         : 4px 16px;
+  text-decoration: none;
+  position       : relative;
+  display        : inline-block;
+  cursor         : pointer;
+}
+
+.parts-selector .controls .movetoALL .icon {
+  display    : block;
+  position   : relative;
+  width      : 2em;
+  height     : 2em;
+  line-height: 2em;
+  text-align : center;
+}
+
+.parts-selector .controls .movetoALL .icon:before,
+.parts-selector .controls .movetoALL .icon:after {
+  content           : '';
+  height            : 1em;
+  width             : 0.2em;
+  background-color  : #c6c5c5;
+  position          : absolute;
+  top               : 50%;
+  margin-top        : -0.5em;
+  -webkit-transition: background-color .7s;
+  transition        : background-color .7s;
+}
+
+.parts-selector .controls .movetoALL .icon:before {
+  left             : 0.6em;
+  -webkit-transform: rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+.parts-selector .controls .movetoALL .icon:after {
+  right            : 0.6em;
+  -webkit-transform: rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.parts-selector .controls .movetoALL.selected .icon:before {
+  left             : 0.6em;
+  -webkit-transform: rotate(135deg);
+  transform        : rotate(135deg);
+}
+
+.parts-selector .controls .movetoALL.selected .icon:after {
+  right            : 0.6em;
+  -webkit-transform: rotate(-135deg);
+  transform        : rotate(-135deg);
+}
+
+@media screen and (min-width: 768px) {
+  .parts-selector .controls .movetoALL {
+    -webkit-transform: rotate(-90deg);
+    transform        : rotate(-90deg);
+  }
+}
+
+.parts-selector .controls .movetoALL .text {
+  display : block;
+  width   : 0;
+  height  : 0;
+  overflow: hidden;
+}
+
+
+
+/* chinh css header table xuong dong*/
+.wordwrap {
+  white-space    : pre-wrap;
+  word-break     : break-word;
+  /* position    : absolute;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%, -50%); */
+}
+
+.my_title {
+  padding-top: 3px;
+  white-space: pre-line;
+  word-wrap  : break-word;
+  line-height: 18px;
+}
+
+.header_login {
+  color      : #Ed1c24;
+  font-weight: bold;
+  font-size  : 15px;
+  top        : 60px;
+}
+
+/* chinh css header table canh doc ngay giau*/
+.header_table_pad_3 {
+  padding-top: 3px;
+}
+
+/* chinh css table */
+.ReactTable {
+  margin-left : -27px;
+  margin-right: -27px;
+}
+
+.ReactTable .-pagination .-center {
+  justify-content: center !important;
+}
+
+textarea {
+  width       : 200px;
+  min-width   : 360px;
+  /* max-width:360px; */
+
+  height    : 200px;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.checkbox_custom {
+  margin-right: 80px;
+}
+
+.DayPicker-NavButton--prev {
+  display: none !important;
+}
+
+.DayPicker-NavButton--next {
+  display: none !important;
+}
+
+.firstModal {
+  z-index: 1041;
+}
+
+.secondModal {
+  z-index: 1050;
+}
+
+.tablecustom .ReactTable .rt-thead.-header {
+  display: none !important;
+}
+
+.Bell {
+  white-space: nowrap;
+
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  display      : inline !important;
+  float        : left;
+  width        : 92%;
+
+
+}
+
+.bellcustom {
+  /*
+  max-height: 250px;
+    overflow: auto; */
+  font-size  : 16px;
+  font-style : italic;
+  font-family: cursive;
+}
+
+.BellClose {
+  float       : right;
+  width       : 5%;
+  margin-right: 8px;
+  transition  : 0.4s;
+}
+
+.BellClose:hover {
+  color    : red;
+  font-size: 18px
+}
+
+.liCustom {
+  float : none !important;
+  height: 60px;
+
+}
+
+.liCustom:hover {
+  background-color: #cabfbf4d
+}
+
+.coloreven {
+  background-color: #dce7ff9c;
+  height          : 60px;
+
+  border      : solid 1px;
+  border-left : none;
+  border-right: none;
+  border-color: #cabfbf4d;
+}
+
+.sticky {
+  position        : sticky !important;
+  -webkit-position: sticky !important;
+  left            : 0;
+  top             : 0;
+  z-index         : 1;
+
+}
+
+/*dock column dau cua react table */
+@media (min-width: 768px) {
+  .doichieulenh .ReactTable .rt-tbody {
+    overflow: unset !important;
+  }
+}
+
+.doichieulenh .-headerGroups .rt-tr div:first-child {
+  position: sticky !important;
+  left    : 0 !important;
+  top     : 0 !important;
+  z-index : 1 !important;
+
+  box-shadow: rgb(221, 221, 221) 2px 0px 5px;
+}
+
+.doichieulenh .rt-tbody .rt-tr-group .rt-tr div:first-child {
+  position        : sticky !important;
+  left            : 0 !important;
+  top             : 0 !important;
+  z-index         : 1 !important;
+  box-shadow      : rgb(221, 221, 221) 2px 0px 5px;
+  background-color: white !important;
+  text-align      : left;
+}
+
+.doichieulenh .ReactTable .rt-thead.-header {
+  position: sticky;
+
+  z-index: 99;
+  top    : 0px;
+}
+
+.rowColorTable {
+  font-weight: bold
+}
+
+.loader {
+  border       : 16px solid #f3f3f3;
+  /* Light grey */
+  border-top   : 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width        : 120px;
+  height       : 120px;
+  animation    : spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hehe:hover,
+.hehe:active {
+  font-size: 150%
+}
+
+.titleBell {
+  margin     : 8px;
+  font-size  : 12px;
+  font-weight: bold;
+}
+
+.hihi:after {
+  margin-left: 241px;
+}

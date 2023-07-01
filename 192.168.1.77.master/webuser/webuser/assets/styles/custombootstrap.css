@@ -1,0 +1,79 @@
+
+.modal-dialog {
+  
+
+}
+.caret{
+  right: 0;
+  position: absolute;
+  top: 50%;
+
+}
+.menu-tree .glyphicon {
+  font-family: none !important;
+  margin-right: 4px !important;
+}
+.menu-tree.navbar-nav > li {
+  float: inherit !important;
+}
+.rc-menu-submenu-arrow:before {
+  content: "\F0DA"
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+}
+.rc-menu-submenu-arrow{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  position: absolute;
+  right: 8px;
+  line-height: 1.5em;
+  transform: rotate(90deg);
+ 
+}
+.menu-tree .divider {
+  overflow: hidden;
+  /* background-color:rgba(229, 229, 229, 0.37); */
+  border-bottom: 1px solid #f3e5e5;
+  }
+/* .menu  .dropdown.open > ul> li > .dropdown> a:hover, a:focus .menu  .dropdown.open > li > ul.dropdown-menu {
+  display: block !important
+} */
+
+.menu-tree .glyphicon-cloud:before {
+    content: "\f078" !important;
+}
+
+.table-hover > tbody > tr:hover {
+      background-color: rgba(224, 234, 222, 0.87) !important;
+      cursor: pointer;
+}
+.has-feedback .form-control-feedback {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  display: block;
+  width: 26px;
+  height: 23px;
+  line-height: 12px;
+  text-align: center;
+}
+.dropdown-menu > li > a{
+  font-size: 12px ;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  font-size: 12px;
+}
+.navbar-default .navbar-nav > li > a{
+  font-size: 12px
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
+}
